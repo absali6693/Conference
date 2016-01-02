@@ -109,12 +109,13 @@ ul li {
 }
 
 .form-control {
-  border-radius: 0;
+  border-radius: 10px;
   box-shadow: none;
   height: 48px;
   padding: 10px 12px;
   font-size: 16px;
   line-height: 1.6;
+  margin:10px; 
 }
 .form-control:focus {
   box-shadow: none;
