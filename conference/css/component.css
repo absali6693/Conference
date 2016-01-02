@@ -24,10 +24,14 @@ perspective effects (not including the modals and the overlay).
 
 .md-modal {
 	position: fixed;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	width: 50%;
+<<<<<<< HEAD
 	max-width: 630px;
+=======
+	max-width: 450px;
+>>>>>>> parent of 2f573d0... Form UI-revamp
 	min-width: 320px;
 	height: auto;
 	z-index: 2000;
