@@ -83,34 +83,39 @@
 
         <div class="form-group">
             <div class="col-xs-6"> 
-                <input type="text" id='first_name' name='first_name' class="form-control" placeholder="First Name" length='15'>
+                <input type="text" id='first_name' name='first_name' class="form-control" placeholder="First Name" >
             </div>
             <div class="col-xs-6"> 
-                <input type="text" id='last_name' name='last_name' class="form-control" placeholder="Last Name" length='15'>
+                <input type="text" id='last_name' name='last_name' class="form-control" placeholder="Last Name" >
             </div>
             <div class="col-xs-6"> 
-                <input type="text" id='first_name' name='first_name' class="form-control" placeholder="Email ID" length='15'>
+                <input type="text" id='email' name='email' class="form-control" placeholder="Email ID" >
             </div>
             <div class="col-xs-6"> 
-                <input type="text" id='last_name' name='last_name' class="form-control" placeholder="Contact No" length='15'>
+                <input type="text" id='contact_no' name='contact_no' class="form-control" placeholder="Contact No" >
             </div>
             <div class="col-xs-6"> 
-                <input type="text" id='first_name' name='first_name' class="form-control" placeholder="Address" length='15'>
+                <input type="text" id='address' name='address' class="form-control" placeholder="Address" >
             </div>
             <div class="col-xs-6"> 
-                <input type="text" id='last_name' name='last_name' class="form-control" placeholder="Place" length='15'>
+                <input type="text" id='place' name='place' class="form-control" placeholder="Place" >
             </div>
         </div>
         
 
 
 <div>
-<button class="md-close">Close Me!</button>
+   <script src="js/index.js"></script>  
+<button class="md-close" style="position:absolute;     top:0;     right:0;">Close Me!</button>
+<button class="" style="margin 0 auto;"  onclick="postContactToGoogle()"  >Submit</button>
+
 </div>
 </form>
 
                 </div>
             </div>
+             <div class="md-modal md-effect-18" id="modal-19">   <div class="md-content">
+                    <h6>Thank YOu</h6> </div></div>
             <div class="container1">
             <!-- Top Navigation -->
             
@@ -448,5 +453,6 @@ Contact us
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
     <script src="assets/js/main.js"></script>
+
 </body>
 </html>
