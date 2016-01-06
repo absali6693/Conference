@@ -193,7 +193,38 @@ perspective effects (not including the modals and the overlay).
 	color:white;
 }
 
+/*Schedule*/
+.schedule
+{
+margin:70px;
+align:center;
+width:80%;   
+}
 
+.datagrid table 
+{ 
+border-collapse: collapse;
+text-align: left;
+width: 100%;
+} 
+.datagrid 
+{
+font: normal 12px/150% Arial, Helvetica, sans-serif; 
+background: #fff; overflow: hidden; 
+border: 1px solid #282828;
+box-shadow: 10px 10px 5px #888888;
+}
+.datagrid table td, .datagrid table th 
+{ 
+padding: 17px 13px;
+}
+.datagrid table thead th 
+{background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #303030), color-stop(1, #303030) );background:-moz-linear-gradient( center top, #303030 5%, #303030 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#303030', endColorstr='#303030');background-color:#303030; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #282828;
+ } 
+.datagrid table tbody td 
+{ color: #707070; border-left: 1px solid #707070;font-size: 12px;font-weight: normal; }
+
+.datagrid table tbody .alt td { background: #C0C0C0; color: #F8F8F8; }
 
 @media screen and (max-width: 32em) {
 	body { font-size: 75%; }
