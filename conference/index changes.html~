@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/topics.css">
 
 
 
@@ -29,11 +30,11 @@
                 <!-- logo -->
                 <div class="site-branding">
                     <a class="logo" href="index.html">
-                        
+                        <b style=" font-size:24px;">XYZ&nbsp;&nbsp;</b>
                         <!-- logo image  -->
-                        <img src="assets/images/logo.png" alt="Logo">
+                        <img src="logo/logo-56x56.png" alt="Logo">
 
-                        Conference 2015
+                        onference 2016
                     </a>
                 </div>
 
@@ -76,48 +77,55 @@
             <p>First &amp; Largest Conference</p>
             
             <div class="md-modal md-effect-18" id="modal-18">
+
+
                 <div class="md-content">
-                    <h6>Registration</h6>
+                    <h6 class="color-white">Registration</h6>
                     
 <form>
 
         <div class="form-group">
             <div class="col-xs-6"> 
-                <input type="text" id='first_name' name='first_name' class="form-control" placeholder="First Name" length='15'>
+                <input type="text" id='first_name' name='first_name' class="form-control" placeholder="First Name" >
             </div>
             <div class="col-xs-6"> 
-                <input type="text" id='last_name' name='last_name' class="form-control" placeholder="Last Name" length='15'>
+                <input type="text" id='last_name' name='last_name' class="form-control" placeholder="Last Name" >
             </div>
             <div class="col-xs-6"> 
-                <input type="text" id='first_name' name='first_name' class="form-control" placeholder="Email ID" length='15'>
+                <input type="text" id='email' name='email' class="form-control" placeholder="Email ID" >
             </div>
             <div class="col-xs-6"> 
-                <input type="text" id='last_name' name='last_name' class="form-control" placeholder="Contact No" length='15'>
+                <input type="text" id='contact_no' name='contact_no' class="form-control" placeholder="Contact No" >
             </div>
             <div class="col-xs-6"> 
-                <input type="text" id='first_name' name='first_name' class="form-control" placeholder="Address" length='15'>
+                <input type="text" id='address' name='address' class="form-control" placeholder="Address" >
             </div>
             <div class="col-xs-6"> 
-                <input type="text" id='last_name' name='last_name' class="form-control" placeholder="Place" length='15'>
+                <input type="text" id='place' name='place' class="form-control" placeholder="Place" >
             </div>
         </div>
         
 
 
 <div>
-<button class="md-close">Close Me!</button>
+   <script src="js/index.js"></script>  
+   <br><br>
+<button class="" style="margin 0 auto;"  onclick="postContactToGoogle()"  >Submit</button>
+
 </div>
 </form>
 
                 </div>
             </div>
+             <div class="md-modal md-effect-18" id="modal-19">   <div class="md-content">
+                    <h6>Thank YOu</h6> </div></div>
             <div class="container1">
             <!-- Top Navigation -->
             
                     <button class="md-trigger md-setperspective color" data-modal="modal-18">Register Now</button>
             
             </div><!-- /container -->
-            <div class="md-overlay"></div><!-- the overlay element -->
+            <div class="md-overlay"><button class="md-close close-button" >Close Me!</button></div><!-- the overlay element -->
 
             <script src="js/classie.js"></script>
             <script src="js/modalEffects.js"></script>
@@ -135,8 +143,27 @@
 <section id="details">
 Details(such as venue, reporting time, registration fee etc.)
 </section>
-    <section id="topics">
-Topics
+    <section id="topics" class="module parallax parallax-1">
+        <div class="container">
+         <div class="one">
+                <img id="topicbackground" src="assets/images/demo/blackboard.jpg">     
+            </div>
+            <div class="two">
+                <h3><u>Topics</u></h3>
+                <div class="list">
+                   <ol>
+
+                        <li>Plasma Science Technology</li>
+                        <li> Boolean Algebra</li>
+                        <li>XYZ</li>
+                        <li> UVW</li>
+                    </ol>
+                </div>
+
+            </div>
+
+
+        </div>
     </section>
     <section id="submission" class="section bg-image-2 submission">
         <div class="container">
@@ -162,7 +189,7 @@ Topics
                 </div>
             </div>
 <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-12">
 
             <div class="row">
                 <div class="col-md-2">
@@ -448,5 +475,6 @@ Contact us
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/topics.js"></script>
 </body>
 </html>
