@@ -1,0 +1,258 @@
+
+    
+    
+<body background="a.jpg">    
+<form id="conf_form" class="container awesome-form">
+<table>
+  <tr><h1><u>Conference Registration Form</u></h1> </tr>
+  <tr height="100px"> 
+  <td> 
+    <div class="input-group"><input class="box-style" type="text" id="first_name"  name="first_name" ><label>First Name</label></div></td>
+  <td>
+    <div class="input-group"><input class="box-style" type="text" id="last_name"  name="last_name" > <label>Last Name</label></div></td>
+  </tr>
+
+  <tr height="20px"><td>
+  <div class="box-style" id="errorfirst_name" class="error"></td>
+
+  <td><div class="box-style" id="errorlast_name" class="error"></td></tr>
+
+  <tr height="100px"><td><div class="input-group"><input class="box-style" type="text" id="email"  name="email"> <label>Email Address</label></div></td>
+  <td><div class="input-group"><input class="box-style" type="text" id="contact_no"  name="contact_no"> <label>Contact No.</label></div></td></tr>
+
+  <tr height="20px"><td>
+  <div class="box-style" id="erroremail" class="error"></td>
+  <td><div class="box-style" id="errorcontact_no" class="error"></td>
+  </tr>
+
+  <tr height="100px"><td> <div class="input-group"><input class="box-style" type="text" id="address"  name="address" ><label>Address</label></div></td>
+  <td><div class="input-group"><input class="box-style" type="text" id="place"  name="place" > <label>Place</label></div></td></tr>
+
+  <tr height="20px"><td>
+  <div class="box-style" id="erroraddress" class="error"></td>
+  <td class="box-style" id="errorplace" class="error"></td>
+  </tr>
+
+  <tr height="100px"><td  colspan="2"><input class="buttom-style" type="file" id="uploaded_paper"  name="uploaded_paper"  class="custom-file-input" style="margin-left: 14%;"></td></tr>
+
+<tr height="20px" id="erroruploaded_paper" class="error"></tr>
+
+</table>
+<input class="buttom-style" type="submit" value="Submit" id="form_submit" name="commit" style="margin-left: 25%;">
+</form>
+    
+<div id="result">
+       
+</div>
+<div id='conf_form_errorloc' class='error_strings'></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.min.js"></script>
+
+<script>
+
+var myEl = document.getElementById('form_submit');
+
+myEl.addEventListener('click' ,function(event){
+
+var validator = $( "#conf_form" ).validate({
+
+// Specify the validation rules
+        rules: {
+            first_name: "required",
+            last_name: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            contact_no:{
+                required : true,
+                digits :true,
+                maxlength:10,
+                minlength:10
+            },
+            address:"required",
+            place: "required",
+            uploaded_paper:{
+            
+            required:true,
+            extension: "pdf|doc"
+            
+            }
+        },
+        
+        // Specify the validation error messages
+        messages: {
+            first_name: "Please enter your first name",
+            last_name: "Please enter your last name",
+            email: "Please enter valid email address",
+            contact_no: {
+                required: "Please provide contact no.",
+                digits: "Enter digits only",
+                minlength: "Your contact no  must be at least 10 digits.",
+                maxlenght: "Your contact no  should be max 10 digits."
+            },
+            address: "Please enter your address",
+            place: "Please enter place",
+            uploaded_paper : {
+             required : "Please submit your paper",
+             extension : "Your file should be in .pdf/.doc format only"
+            }
+        },
+        errorPlacement: function ($error, $element) {
+            var name = $element.attr("name");
+            
+            $("#error" + name).append($error);
+        }
+
+
+
+
+});
+
+
+if(validator.form()){
+this.value= 'Uploading...!!';
+google.script.run.withSuccessHandler(form_result)
+                     .processForm(this.parentNode); 
+         }           
+ event.preventDefault();
+},false);
+
+function form_result(status){
+   document.getElementById('conf_form').style.display ="none";
+   document.getElementById('result').innerHTML = status;
+    
+}
+
+$(function(){
+  
+  $('.awesome-form .input-group input').focusout(function(){
+    
+    var text_val = $(this).val();
+    
+    if(text_val === "") {
+      
+      $(this).removeClass('has-value');
+      
+    } else {
+      
+      $(this).addClass('has-value');
+      
+    }
+    
+  });
+  
+});
+
+
+</script>
+
+
+<style>
+label{
+  color:white !important;
+}
+table{
+  width:100%;
+}
+
+td{
+  width:40%;
+}
+
+body {
+  padding: 100px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1{
+ color: white;
+ font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+ font-style: oblique;
+  
+}
+
+input {
+  background: none;
+  border: solid 2px #5F2001;
+  color: #5F2001;
+  padding: 15px 40px;
+  font-size: 18px;
+  display: inline-block;
+}
+input:focus, input:active {
+  outline: none;
+}
+input[type="text"], input[type="email"] {
+  border: none;
+  border-bottom: solid 2px #5F2001;
+}
+input[type="file"] {
+  border: none;
+  border-bottom: solid 2px #5F2001;
+}
+input[type="submit"]:active {
+  color: white;
+  background: #5F2001;
+}
+
+
+ .buttom-style{
+      border-radius: 20px;
+    color: white;
+    background-color: rgba(0,0,0,.6);
+ }
+
+.input-group {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  width:30%;
+}
+.input-group input {
+  padding: 15px 0px;
+}
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-style: italic;
+  font-size: 18px;
+  color: #999;
+  pointer-events: none;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+.input-group input:focus + label,
+.input-group input.has-value + label {
+  top: -10px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-file-input::before {
+  content: "Upload";
+  border: solid 2px #5F2001;
+  padding: 15px 40px;
+  cursor: pointer;
+  position: relative;
+  left: -40px;
+}
+
+.box-style{
+  width:200%;
+}
+
+.error { color: red; }
+
+
+</style>
+</body>
