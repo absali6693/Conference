@@ -19,7 +19,12 @@
 <body>
 
 <div class="one" style="margin:30px;">
-<canvas>
+<canvas id="test">
+	Plasma Science
+	Boolean Algebra
+	Computer Science
+	Maze kro
+	Hamse na ho paega
 </canvas>
 </div>
   <script type="text/javascript">
@@ -30,9 +35,13 @@ var node = document.getElementById('txtStyle');
 ctx.font = "30px Whatever it takes"; 
 ctx.lineWidth = 2; ctx.lineJoin = "round"; ctx.globalAlpha = 2/3;
 ctx.strokeStyle = ctx.fillStyle = "#fff";
+var node = document.getElementById('test');
 
+text = node.innerHTML;
+var array = text.split('\n');
+	array = array.filter(Boolean)
 
-   var dashLen = 100, dashOffset = dashLen, speed = 5,
+   var dashLen = 20, dashOffset = dashLen, speed = 10,
      x = 30, i = 0 , y=90;
 //    txt = node.textContent;
 var txt;
@@ -61,7 +70,7 @@ function abcd(g)
   },3000);   
 }*/
   }
-abcd(topics[0]);
+abcd(array[0]);
 
 function loop() {
   ctx.clearRect(x, y, 60, 160);
@@ -83,7 +92,7 @@ function loop() {
     if(i==txt.length)
     {
             flag=true;
-      abcd(topics[j]);
+      abcd(array[j]);
 
     }
   }
