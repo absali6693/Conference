@@ -4,7 +4,7 @@
 }
 section.module.parallax {
   z-index: 1;
-  padding: 50px 0;
+  padding: 20px 0;
   background-position: 0 0;
 }
 
@@ -16,7 +16,7 @@ display: block;
 }
 #topicbackground
 {
-width: 1120px;
+width: 1320px;
 height: 500px;
 }
 .two h3
@@ -50,7 +50,13 @@ div.list
 padding-top: 115px;
 }
 section.module.parallax-1 {
-  background-image: url("../images/topics/paper1.png");
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+ url("http://paper-backgrounds.com/textureimages/2012/08/brown-embossed-leather-texture-500x375.jpg");
 }
 
 @media all and (min-width: 300px) {
@@ -69,7 +75,7 @@ section.module.parallax-1 {
   height: 500px;
 }
   section.module.parallax {
-    padding: 100px 0;
+    padding: 20px 0;
   }
 
 }
