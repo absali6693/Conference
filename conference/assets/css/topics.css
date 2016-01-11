@@ -38,13 +38,6 @@ left: 7%;
 position: absolute;
 }
 section.module.parallax-1 {
-  background: 
-    /* top, transparent red, faked with gradient */ 
-    linear-gradient(
-      rgba(0, 0, 0, 0.7), 
-      rgba(0, 0, 0, 0.7)
-    ),
- url("http://paper-backgrounds.com/textureimages/2012/08/brown-embossed-leather-texture-500x375.jpg");
 }
 
 @media all and (min-width: 300px) {
