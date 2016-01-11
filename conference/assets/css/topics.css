@@ -7,7 +7,6 @@ section.module.parallax {
   padding: 20px 0;
   background-position: 0 0;
 }
-
 .one
 {
   z-index: 2;
@@ -16,38 +15,27 @@ display: block;
 }
 #topicbackground
 {
-width: 1320px;
+width: 1120px;
 height: 500px;
 }
 .two h3
 {
-  z-index: 3;
+z-index: 3;
 position: absolute;
 padding-top: 50px;
-left: 600px;
+left: 45%;
 color: white;
 text-align: center;
 font-family: Whatever it takes;
 font-size: 40px;
 font-weight: 700;
 }
-.two ol
-{
-  z-index: 50;
-position: absolute;
-display: block;
-left: 150px;  
-color: white;
-text-align: center;
-font-family: Whatever it takes;
-font-size: 30px;
-font-weight: 600;
-text-align: left;
-width: 100%;
-}
 div.list
 {
-padding-top: 115px;
+z-index: 50;
+padding-top: 50px;
+left: 7%;
+position: absolute;
 }
 section.module.parallax-1 {
   background: 
@@ -60,18 +48,18 @@ section.module.parallax-1 {
 }
 
 @media all and (min-width: 300px) {
-  div.two ol
+ div.list
   {
-    left:60px;
+    left: -20px;
     font-size: 23px;
   }
   div.two h3
   {
-    left:150px;
+    left: 40%;
     font-size: 30px;
   }
 #topicbackground{
-  width: 270px;
+  width: 100%;
   height: 500px;
 }
   section.module.parallax {
@@ -83,13 +71,13 @@ section.module.parallax-1 {
   section.module.parallax h1 {
     font-size: 160px;
   }
-  div .two ol
+  div .list
   {
-    left: 150px;
+    left: 7%;
     font-size: 30px;
   }
   div.two h3{
-    left: 600px;
+   left: 45%;
     font-size: 40px;
   }
   #topicbackground{
