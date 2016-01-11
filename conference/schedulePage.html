@@ -2,22 +2,7 @@
 <html>
 <head>
     <title></title>
-    <script>
-    function showonlyone(thechosenone) {
-      var newboxes = document.getElementsByTagName("div");
-            for(var x=0; x<newboxes.length; x++) {
-                  name = newboxes[x].getAttribute("class");
-                  if (name == 'newboxes') {
-                        if (newboxes[x].id == thechosenone) {
-                        newboxes[x].style.display = 'block';
-                  }
-                  else {
-                        newboxes[x].style.display = 'none';
-                  }
-            }
-      }
-}
-</script>
+    
 </head>
 <body>
 
@@ -299,23 +284,20 @@ Details(such as venue, reporting time, registration fee etc.)
         </div>
     </section>
     <section id="schedule" class="section schedule">
-        <div class="container" style="background:url('assets/images/schedule/scheduleBackgroundfour.jpg');">
+        <div class="container" >
 
            
-         <div class="one" >        
+         <div class="one"
+>                <img id="scheduleBackground" src="assets/images/schedule/scheduleBackgroundFour.jpg">        
 
           
-            <div class="two" >
+            <div class="two">
                
 
 
            
 <button class="btn btn-black" type="button" data-toggle="collapse" data-target="#currentEventSchedule" aria-expanded="false" aria-controls="collapseExample">
   Ongoing Events
-</button>
-
-<button class="btn btn-black" type="button" data-toggle="collapse" data-target="#currentEventSchedule2" aria-expanded="false" aria-controls="collapseExample">
-  Upcoming Events
 </button>
 
   </div>
@@ -328,9 +310,10 @@ Details(such as venue, reporting time, registration fee etc.)
       <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#conferenceOneDetails">American Library Association. Conference</a>
+
         </h4>
       </div>
-      <div id="conferenceOneDetails" class="panel-collapse collapse ">
+      <div id="conferenceOneDetails" class="panel-collapse collapse in">
        
 
 <div class="row">
@@ -372,72 +355,42 @@ Details(such as venue, reporting time, registration fee etc.)
           <a data-toggle="collapse" data-parent="#accordion" href="#conferenceTwoDetails"> Conference "Aligning Financial Supervisory Structure with Country Needs"</a>
         </h4>
       </div>
-      <div id="conferenceTwoDetails" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      </div>
+      <div id="conferenceTwoDetails" class="panel-collapse collapse in">
+        
+
+<div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="09:00">09:00 am</time> - <time datetime="22:00">10:00 am</time>
+                        </div>
+                        <h3>Welcome and intro</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
+                        </div>
+                        <h3>Tips and share</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
+                        </div>
+                        <h3>View from the top</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
+                    </div>
+                </div>
+            </div>
+
     </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#conferenceThreeDetails">Conference on Cyanobacteria</a>
-        </h4>
-      </div>
-      <div id="conferenceThreeDetails" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      </div>
-    </div>
-  </div> 
+    
 </div>
-
-
-
-<div class="collapse" id="currentEventSchedule2">
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#upcomingConferenceOneDetails">25th Annual International Conference </a>
-        </h4>
-      </div>
-      <div id="upcomingConferenceOneDetails" class="panel-collapse collapse ">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#upcomingConferenceTwoDetails"> 25th Annual International Conference "</a>
-        </h4>
-      </div>
-      <div id="upcomingConferenceTwoDetails" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#upcomingConferenceThreeDetails">25th Annual International Conference </a>
-        </h4>
-      </div>
-      <div id="upcomingConferenceThreeDetails" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      </div>
-    </div>
-  </div> 
-</div>
-
-
-
             </div>
 
 
