@@ -467,11 +467,10 @@ Contact us
 
     var dashLen = 20, dashOffset = dashLen, speed = 10,
     x = -110, i = 0 , y=90;
-    var txt, j=0, flag=false, turn=0, interested=false;
+    var txt, j=0, flag=false, turn=0;
 function triggerWritingAnimation(temp)
 {
     turn=1;
-    interested=true;
     txt=temp;
     j++;
     if(j>topics.length) return;
@@ -518,8 +517,7 @@ function loop() {
        wH = $(window).height(),
        wS = $(this).scrollTop();
    if (wS > (hT+hH/3-wH)){
-        interested=true;
-        if(turn==0 && interested==true)
+        if(turn==0 )
         {
             triggerWritingAnimation(topics[0]);
         }

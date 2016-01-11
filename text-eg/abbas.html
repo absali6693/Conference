@@ -43,7 +43,6 @@ var array = text.split('\n');
 
    var dashLen = 20, dashOffset = dashLen, speed = 10,
      x = 30, i = 0 , y=90;
-//    txt = node.textContent;
 var txt;
 var j=0;
 var topics=["Plasma Science","Boolean Algebra"];
@@ -52,6 +51,7 @@ function abcd(g)
 {
     txt=g;
     j++;
+    if(j>array.length) return;
     if(flag==true)
     {
       x=30;
@@ -59,16 +59,7 @@ function abcd(g)
       y=y+30;
     }
     loop();
-/*if(j<splitted.length)
-{
-  setTimeout(function(){
-    alert("5 sec");
-    x=30;
-    i=0;
-    y=120;
-    abcd(splitted[j]);
-  },3000);   
-}*/
+
   }
 abcd(array[0]);
 
@@ -76,6 +67,7 @@ function loop() {
   ctx.clearRect(x, y, 60, 160);
   ctx.setLineDash([dashLen - dashOffset, dashOffset - speed]); // create a long dash mask
   dashOffset -= speed;                                         // reduce dash length
+  console.log(txt[i]+"   "+i);
   ctx.strokeText(txt[i], x, y);                               // stroke letter
 
   if (dashOffset > 0)
