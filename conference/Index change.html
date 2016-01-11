@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/topics.css">
-<link rel="stylesheet" href="bower_components/bootstrap/js/collapse.js">
+
 
 
 
@@ -277,46 +277,35 @@ Details(such as venue, reporting time, registration fee etc.)
             </div>
         </div>
     </section>
-
     <section id="schedule" class="section schedule">
-        <div class="container" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Event Schedule</h3>
+                </div>
+            </div>
+                <div class="schedule">
+                    <div class="datagrid"> 
+                        <table>
+                            <thead><tr><th>Program</th><th>Time</th></tr></thead>
+                            <tbody><tr><td>data</td><td>data</td></tr>
+                                <tr class="alt"><td>data</td><td>data</td></tr>
+                                <tr><td>data</td><td>data</td></tr>
+                                <tr class="alt"><td>data</td><td>data</td></tr>
+                                <tr><td>data</td><td>data</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-           
-        
-          
-            <div class="two">
-               
-
-
-           
-<button class="btn btn-black" type="button" data-toggle="collapse" data-target="#currentEventSchedule" aria-expanded="false" aria-controls="collapseExample">
-  Ongoing Events
-</button>
-
-  </div>
-
-
-
-<div class="collapse" id="currentEventSchedule">
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#conferenceOneDetails">American Library Association. Conference</a>
-
-        </h4>
-      </div>
-      <div id="conferenceOneDetails" class="panel-collapse collapse ">
-       
-
-<div class="row">
+            <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="schedule-box">
                         <div class="time">
                             <time datetime="09:00">09:00 am</time> - <time datetime="22:00">10:00 am</time>
                         </div>
-                        <h3>Introduction</h3>
-                        <p>Mustafizur Khan/p>
+                        <h3>Welcome and intro</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
@@ -325,7 +314,7 @@ Details(such as venue, reporting time, registration fee etc.)
                             <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
                         </div>
                         <h3>Tips and share</h3>
-                        <p>Mustafizur Khan</p>
+                        <p>Mustafizur Khan, SD Asia</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
@@ -333,64 +322,10 @@ Details(such as venue, reporting time, registration fee etc.)
                         <div class="time">
                             <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
                         </div>
-                        <h3>View from top</h3>
-                        <p>Mustafizur Khan</p>
+                        <h3>View from the top</h3>
+                        <p>Mustafizur Khan, SD Asia</p>
                     </div>
                 </div>
-            </div>
-
-
-       
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#conferenceTwoDetails"> Conference "Aligning Financial Supervisory Structure with Country Needs"</a>
-        </h4>
-      </div>
-      <div id="conferenceTwoDetails" class="panel-collapse collapse ">
-        
-
-<div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="09:00">09:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Introduction</h3>
-                        <p>Mustafizur Khan</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Tips and share</h3>
-                        <p>Mustafizur Khan</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>View from top</h3>
-                        <p>Mustafizur Khan</p>
-                    </div>
-                </div>
-            </div>
-
-    </div>
-    
-</div>
-            </div>
-
-
-      
-
-        
-              
             </div>
     </section>
 <section id="facilities">
@@ -582,11 +517,7 @@ function loop() {
        wH = $(window).height(),
        wS = $(this).scrollTop();
    if (wS > (hT+hH/3-wH)){
-<<<<<<< HEAD
-        if(turn==0)
-=======
-        if(turn==0 )
->>>>>>> 2d72c2e70e00dd1c2e78baa2b23c0dcc36920d88
+        if(turn==0 && interested==true)
         {
             triggerWritingAnimation(topics[0]);
         }
