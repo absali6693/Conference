@@ -2,6 +2,22 @@
 <html>
 <head>
     <title></title>
+    <script>
+    function showonlyone(thechosenone) {
+      var newboxes = document.getElementsByTagName("div");
+            for(var x=0; x<newboxes.length; x++) {
+                  name = newboxes[x].getAttribute("class");
+                  if (name == 'newboxes') {
+                        if (newboxes[x].id == thechosenone) {
+                        newboxes[x].style.display = 'block';
+                  }
+                  else {
+                        newboxes[x].style.display = 'none';
+                  }
+            }
+      }
+}
+</script>
 </head>
 <body>
 
@@ -21,7 +37,7 @@
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/topics.css">
-<link rel="stylesheet" href="bower_components/bootstrap/js/collapse.js">
+
 
 
 
@@ -282,40 +298,43 @@ Details(such as venue, reporting time, registration fee etc.)
             </div>
         </div>
     </section>
-
     <section id="schedule" class="section schedule">
-        <div class="container">
-            <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-  Link with href
-</a>
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-  Button with data-target
-</button>
-<div class="collapse" id="collapseExample">
-  <div class="well">
-    ...
-  </div>
-</div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="section-title">Event Schedule</h3>
-                </div>
-            </div>
-                <div class="schedule">
-                    <div class="datagrid"> 
-                        <table>
-                            <thead><tr><th>Program</th><th>Time</th></tr></thead>
-                            <tbody><tr><td>data</td><td>data</td></tr>
-                                <tr class="alt"><td>data</td><td>data</td></tr>
-                                <tr><td>data</td><td>data</td></tr>
-                                <tr class="alt"><td>data</td><td>data</td></tr>
-                                <tr><td>data</td><td>data</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+        <div class="container" >
 
-            <div class="row">
+           
+         <div class="one"
+>                <img id="topicbackground" src="assets/images/schedule/scheduleBackgroundFour.jpg">        
+
+          
+            <div class="two">
+               
+
+
+           
+<button class="btn btn-black" type="button" data-toggle="collapse" data-target="#currentEventSchedule" aria-expanded="false" aria-controls="collapseExample">
+  Ongoing Events
+</button>
+
+<button class="btn btn-black" type="button" data-toggle="collapse" data-target="#currentEventSchedule2" aria-expanded="false" aria-controls="collapseExample">
+  Upcoming Events
+</button>
+
+  </div>
+
+
+
+<div class="collapse" id="currentEventSchedule">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#conferenceOneDetails">American Library Association. Conference</a>
+        </h4>
+      </div>
+      <div id="conferenceOneDetails" class="panel-collapse collapse ">
+       
+
+<div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="schedule-box">
                         <div class="time">
@@ -343,6 +362,90 @@ Details(such as venue, reporting time, registration fee etc.)
                         <p>Mustafizur Khan, SD Asia</p>
                     </div>
                 </div>
+            </div>
+
+
+       
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#conferenceTwoDetails"> Conference "Aligning Financial Supervisory Structure with Country Needs"</a>
+        </h4>
+      </div>
+      <div id="conferenceTwoDetails" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#conferenceThreeDetails">Conference on Cyanobacteria</a>
+        </h4>
+      </div>
+      <div id="conferenceThreeDetails" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+
+
+<div class="collapse" id="currentEventSchedule2">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#upcomingConferenceOneDetails">25th Annual International Conference </a>
+        </h4>
+      </div>
+      <div id="upcomingConferenceOneDetails" class="panel-collapse collapse ">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#upcomingConferenceTwoDetails"> 25th Annual International Conference "</a>
+        </h4>
+      </div>
+      <div id="upcomingConferenceTwoDetails" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#upcomingConferenceThreeDetails">25th Annual International Conference </a>
+        </h4>
+      </div>
+      <div id="upcomingConferenceThreeDetails" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+
+
+            </div>
+
+
+        </div>
+
+        
+              
             </div>
     </section>
 <section id="facilities">
