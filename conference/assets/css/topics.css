@@ -36,6 +36,7 @@ z-index: 50;
 padding-top: 50px;
 left: 7%;
 position: absolute;
+margin-left: -110px;
 }
 section.module.parallax-1 {
 }
