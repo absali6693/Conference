@@ -805,7 +805,7 @@ Contact us
     topics = topics.filter(Boolean)
 
     var dashLen = 20, dashOffset = dashLen, speed = 10,
-    x = -110, i = 0 , y=90;
+    x = 0, i = 0 , y=90;
     var txt, j=0, flag=false, turn=0;
 function triggerWritingAnimation(temp)
 {
@@ -815,7 +815,7 @@ function triggerWritingAnimation(temp)
     if(j>topics.length) return;
     if(flag==true)
     {
-      x=-110;
+      x=0;
       i=0;
       y=y+40;
        }
