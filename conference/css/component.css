@@ -230,3 +230,10 @@ padding: 17px 13px;
 	body { font-size: 75%; }
 }
 
+.map 
+{
+   width: 500px;
+   height: 400px;
+   background-color: rgb(black);
+
+}
