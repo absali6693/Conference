@@ -119,13 +119,20 @@
             <div class="two">
                 <h3 style="color:#000;"><u>Topics</u></h3>
                 <div class="list">
-                    <canvas id="test">
+                                        <canvas id="test" class="test">
                          1. Plasma Science And Technology
                          2. Boolean Algebra
                          3. Computer Science
                          4. Maze kro
                          5. Hamse na ho paega
                     </canvas>
+                    <div style="visibility:hidden;display:none" id="mobile" class="mobile ">
+                         1. Plasma Science And Technology<br>
+                         2. Boolean Algebra<br>
+                         3. Computer Science<br>
+                         4. Maze kro<br>
+                         5. Hamse na ho paega
+                    </div>
                 </div>
         </div>
     </section>
@@ -792,6 +799,17 @@ Contact us
     <script src="assets/js/main.js"></script>
     <script src="assets/js/topics.js"></script>
           <script type="text/javascript">
+       if($(window).width()<300)
+       {
+    var ctx = document.querySelector("canvas").getContext("2d");
+    ctx.canvas.width  = 0;
+    ctx.canvas.height = 0;
+        var mobile=document.getElementById("mobile");
+        mobile.style.visibility="visible";
+        mobile.style.display="block";
+       }
+       else
+       {
     var ctx = document.querySelector("canvas").getContext("2d");
     ctx.canvas.width  = window.innerWidth;
     ctx.canvas.height = window.innerHeight;
@@ -861,7 +879,9 @@ function loop() {
             triggerWritingAnimation(topics[0]);
         }
    }
-});
+});        
+       }   
+
   </script>
 </body>
 </html>
