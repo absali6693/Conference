@@ -229,6 +229,7 @@ padding: 17px 13px;
 @media screen and (max-width: 32em) {
 	body { font-size: 75%; }
 }
+<<<<<<< HEAD
 
 .map 
 {
@@ -237,3 +238,17 @@ padding: 17px 13px;
    background-color: rgb(black);
 
 }
+=======
+.panel panel-default
+{
+	height:500px;
+}
+.conferenceOneLink:link
+{
+	text-decoration:none;
+}
+.conferenceOneLink:hover
+{
+	text-decoration:none;
+}
+>>>>>>> e8bd3e9566a545704305fbdf4a0a12b9f84bb758
