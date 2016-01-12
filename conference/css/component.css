@@ -229,4 +229,15 @@ padding: 17px 13px;
 @media screen and (max-width: 32em) {
 	body { font-size: 75%; }
 }
-
+.panel panel-default
+{
+	height:500px;
+}
+.conferenceOneLink:link
+{
+	text-decoration:none;
+}
+.conferenceOneLink:hover
+{
+	text-decoration:none;
+}
