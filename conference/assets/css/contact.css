@@ -1,0 +1,20 @@
+:placeholder-shown{
+color : orange ;
+}
+
+.form-wrapper input[type="submit"] {
+  display: block;
+  background: #aaa;
+  color: #aaa;
+  border: none;
+  padding: 10px 20px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+input, select, textarea {
+color: black;
+}
+label {
+color: red;
+}
