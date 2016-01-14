@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/topics.css">
     <link rel='stylesheet' type='text/css' href='css/style.css' /> 
-
+  <link rel="stylesheet" href="assets/css/map.css"> 
 
 
     <link rel="shortcut icon" href="../favicon.ico"> 
@@ -30,8 +30,10 @@
         <link rel="stylesheet" type="text/css" href="css/component.css" />
         <script src="js/jquery-2.1.3.min.js"></script> 
         <script src="js/modernizr.custom.js"></script>
-
-    <script type='text/javascript' src='js/infogrid.js'></script>         
+   <!--   <script src="https://maps.googleapis.com/maps/api/js"></script>
+    
+    <script src="assets/js/map.js"></script> -->
+    <script type='text/javascript' src='js/infogrid.js'></script>        
 </head>
 <body data-spy="scroll" data-target="#site-nav">
     <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
@@ -117,13 +119,20 @@
             <div class="two">
                 <h3 style="color:#000;"><u>Topics</u></h3>
                 <div class="list">
-                    <canvas id="test">
+                                        <canvas id="test" class="test">
                          1. Plasma Science And Technology
                          2. Boolean Algebra
                          3. Computer Science
                          4. Maze kro
                          5. Hamse na ho paega
                     </canvas>
+                    <div style="visibility:hidden;display:none" id="mobile" class="mobile ">
+                         1. Plasma Science And Technology<br>
+                         2. Boolean Algebra<br>
+                         3. Computer Science<br>
+                         4. Maze kro<br>
+                         5. Hamse na ho paega
+                    </div>
                 </div>
         </div>
     </section>
@@ -522,8 +531,68 @@
 
 
 </div>
+
          </div>
    </div>
+
+            </div>
+
+
+      
+
+        
+              
+            </div>
+          </section>
+
+<section id="facilities" class="section facilities">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Facilities</h3>
+                </div>
+            </div>
+
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Food</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse ">
+        <div class="panel-body">sth sth sth...............................</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Transportation</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body google-maps">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.685981133787!2d75.79223695014969!3d23.145150617470463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963749a7fdc01c1%3A0x8131eb1a96ebdd1b!2sUjjain+Engineering+College!5e0!3m2!1sen!2sin!4v1452619805496" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <!-- <div id="map"></div> -->
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Accomodation</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">sth sth sth...............................</div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+</section>
+>>>>>>> 6e5878bddb1729f75c61d32e2d60c62786a9702a
 
 </section>
 
@@ -648,6 +717,17 @@ Contact us
     <script src="assets/js/main.js"></script>
     <script src="assets/js/topics.js"></script>
           <script type="text/javascript">
+       if($(window).width()<300)
+       {
+    var ctx = document.querySelector("canvas").getContext("2d");
+    ctx.canvas.width  = 0;
+    ctx.canvas.height = 0;
+        var mobile=document.getElementById("mobile");
+        mobile.style.visibility="visible";
+        mobile.style.display="block";
+       }
+       else
+       {
     var ctx = document.querySelector("canvas").getContext("2d");
     ctx.canvas.width  = window.innerWidth;
     ctx.canvas.height = window.innerHeight;
@@ -661,7 +741,7 @@ Contact us
     topics = topics.filter(Boolean)
 
     var dashLen = 20, dashOffset = dashLen, speed = 10,
-    x = -110, i = 0 , y=90;
+    x = 0, i = 0 , y=90;
     var txt, j=0, flag=false, turn=0;
 function triggerWritingAnimation(temp)
 {
@@ -671,7 +751,7 @@ function triggerWritingAnimation(temp)
     if(j>topics.length) return;
     if(flag==true)
     {
-      x=-110;
+      x=0;
       i=0;
       y=y+40;
        }
@@ -717,7 +797,9 @@ function loop() {
             triggerWritingAnimation(topics[0]);
         }
    }
-});
+});        
+       }   
+
   </script>
 </body>
 </html>
