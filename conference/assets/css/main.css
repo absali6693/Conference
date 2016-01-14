@@ -536,7 +536,7 @@ font-weight: 700;
 }
 
 /* 
- * 6.6 Section: Facility
+ * 6.7 Section: Facility
  */
 
 #map_wrapper {
@@ -549,7 +549,7 @@ font-weight: 700;
 }
 
 /* 
- * 6.7 Section: Schedule
+ * 6.8 Section: Schedule
  */
 .partner {
   background-color: #f8f8f8;
@@ -592,7 +592,7 @@ font-weight: 700;
 }
 
 /* 
- * 6.8 Section: FAQ
+ * 6.9 Section: FAQ
  */
 .faq .panel-heading {
   cursor: pointer;
@@ -629,7 +629,7 @@ font-weight: 700;
 }
 
 /* 
- * 6.9 Section: photos
+ * 7.0 Section: photos
  */
 .grid {
   list-style-type: none;
@@ -681,7 +681,7 @@ font-weight: 700;
   }
 }
 /* 
- * 7.0 Site-footer
+ * 7.1 Site-footer
  */
 .site-footer {
   background-color: #000;
