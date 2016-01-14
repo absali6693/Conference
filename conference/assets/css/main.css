@@ -536,6 +536,19 @@ font-weight: 700;
 }
 
 /* 
+ * 6.6 Section: Facility
+ */
+
+#map_wrapper {
+    height: 400px;
+}
+
+#map_canvas {
+    width: 100%;
+    height: 100%;
+}
+
+/* 
  * 6.7 Section: Schedule
  */
 .partner {
