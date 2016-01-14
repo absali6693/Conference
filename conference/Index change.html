@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
-
+	<link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+    <script src="assets/js/contact.js"></script>
     <link rel='stylesheet' type='text/css' href='css/style.css' /> 
   <link rel="stylesheet" href="assets/css/map.css"> 
 
@@ -870,7 +871,50 @@
     </section>
 -->
 <section id="contact">
-Contact us
+	<B>Contact us</B>
+	<div class="col-md-6">
+			<p>Address- <br>Ujjain Engineering College Ujjain </p>
+		</div>
+		<div class="col-md-6">
+	<form id="contactForm" action="#" method="POST" name="contactForm" onsubmit="return validateForm()">
+		<b> For any query, contact us by providing your details below- </b> <br>
+			Name:<br>
+			
+			
+			<input type="text" name="name" placeholder="your name" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" >
+			
+			<br>
+			E-mail:<br>
+			
+			<input type="text" name="email" id="email" placeholder="iam@domain.com" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'">
+			
+			<br>
+			Message:<br>
+			<div class="row">
+			<textarea id="message" class="input" name="message" rows="7" cols="30" placeholder="your query" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'"></textarea><br/>
+			</div>
+		<input type="submit" value="Send">
+
+	</form>
+
+			
+                    		<!--			<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+					<div class="row">
+					<label for="name">Your name:</label><br />
+					<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+					</div>
+					<div class="row">
+					<label for="email">Your email:</label><br />
+					<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+					</div>
+					<div class="row">
+					<label for="message">Your message:</label><br />
+					<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+					</div>
+					<input id="submit_button" type="submit" value="Send email" color: "red"/>
+					</form>								
+ 				-->
+		</div>
 </section>
 
     <footer class="site-footer">
