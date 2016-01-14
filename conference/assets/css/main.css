@@ -13,7 +13,12 @@
 {
 font-family: Gotham-Bold;
     src: url('../../fonts/gotham/Gotham-BookItalic_0(1).otf');
-}/* 
+}
+@font-face {
+    font-family: Whatever it takes;
+    src: url('../../fonts/whateverittakes/whatever it takes.ttf');
+}
+/* 
  * 2.0 Global Style
  */
 html {
@@ -387,16 +392,96 @@ ul li {
 }
 
 /* 
- * 6.2 Section: Facts
+ * 6.2 Section: Topic
  */
-.facts i {
-  color: #fff;
-  font-size: 3em;
+section.module.parallax {
+  z-index: 1;
+  padding: 20px 0;
+  background-position: 0 0;
 }
-.facts h3 {
-  color: #fff;
-  text-align: center;
-  font-weight: 400;
+.one
+{
+  z-index: 2;
+float: left;
+display: block;
+}
+#topicbackground
+{
+width: 1120px;
+height: 500px;
+}
+.two h3
+{
+z-index: 3;
+position: absolute;
+padding-top: 50px;
+left: 45%;
+color: white;
+text-align: center;
+font-family: Whatever it takes;
+font-size: 40px;
+font-weight: 700;
+}
+div.list
+{
+z-index: 50;
+padding-top: 50px;
+left: 7%;
+position: absolute;
+margin-left: -110px;
+}
+section.module.parallax-1 {
+}
+
+@media all and (min-width: 300px) {
+  div.mobile
+  {
+    margin-top: 15px;
+    margin-left: 50px;
+  text-align: left;
+  color: #000;
+font-family: Whatever it takes;
+font-size: 25px;
+font-weight: 700;
+  }
+ div.list
+  {
+    left: -20px;
+    font-size: 23px;
+    margin-left:0px;
+  }
+  div.two h3
+  {
+    left: 40%;
+    font-size: 30px;
+  }
+#topicbackground{
+  width: 100%;
+  height: 500px;
+}
+  section.module.parallax {
+    padding: 20px 0;
+  }
+
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
+  div .list
+  {
+    left: 7%;
+    font-size: 30px;
+    margin-left: -110px;
+  }
+  div.two h3{
+   left: 45%;
+    font-size: 40px;
+  }
+  #topicbackground{
+  width: 1120px;
+  height: 500px;
+}
 }
 
 /* 
