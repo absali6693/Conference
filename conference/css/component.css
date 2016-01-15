@@ -194,13 +194,13 @@ perspective effects (not including the modals and the overlay).
 }
 
 /*Schedule*/
-.schedule
+/*.schedule
 {
 margin:70px;
 align:center;
 width:80%;   
 }
-
+*/
 .datagrid table 
 { 
 border-collapse: collapse;
@@ -249,18 +249,16 @@ padding: 17px 13px;
 }
 .schedulePanel
 {
-
-
 	 box-shadow: 10px 10px 5px #888888;
 	 border-radius: 10px;
-border:7px solid black;
+border:3px solid black;
 }
 
 .fixed-nav-bar:hover {
     color: blue;
 }
 .fixed-nav-bar {
-	border:5px solid black;
+	border:1px solid black;
 	 box-shadow: 10px 10px 5px #888888;
   background-color:black;
   font-size: 35px;
