@@ -238,17 +238,68 @@ padding: 17px 13px;
    background-color: rgb(black);
 
 }
-=======
-.panel panel-default
-{
-	height:500px;
-}
-.conferenceOneLink:link
+
+.conferenceLink:link
 {
 	text-decoration:none;
 }
-.conferenceOneLink:hover
+.conferenceLink:hover
 {
 	text-decoration:none;
 }
->>>>>>> e8bd3e9566a545704305fbdf4a0a12b9f84bb758
+.schedulePanel
+{
+
+
+	 box-shadow: 10px 10px 5px #888888;
+	 border-radius: 10px;
+border:7px solid black;
+}
+
+.fixed-nav-bar:hover {
+    color: blue;
+}
+.fixed-nav-bar {
+	border:5px solid black;
+	 box-shadow: 10px 10px 5px #888888;
+  background-color:black;
+  font-size: 35px;
+    color:white;
+    text-align:center;
+  width: 100%;
+  height: 70px;
+  background-color: #000000;
+  margin-bottom: 15px;
+  border-radius: 10px;
+ -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+
+}
+@-webkit-keyframes mymove {
+    from {background-color: black;}
+    to {background-color: slategray;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {background-color: black;}
+    to {background-color: slategray}
+.navbarImage{ 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+#scheduleNotification
+{
+border:1px solid black;
+	 box-shadow: 10px 10px 5px #888888;
+  background-color:black;
+  font-size: 10px;
+    color:white;
+    text-align:center;
+  width: 100%;
+  height: 25px;
+  background-color: #000000;
+  margin-bottom: 15px;
+  border-radius: 10px;
+
+}
