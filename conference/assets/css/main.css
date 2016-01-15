@@ -702,3 +702,14 @@ font-weight: 700;
 .site-footer .social-block li a:hover, .site-footer .social-block li a:focus {
   opacity: 0.8;
 }
+
+
+/* Topics */
+.topics {
+  background-color: rgba(255,255,255,.3);
+}
+
+/*Details*/
+.details{
+  background-color: rgba(0,0,0,.4);
+}
