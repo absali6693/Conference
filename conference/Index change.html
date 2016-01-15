@@ -38,7 +38,7 @@
 
 
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
@@ -758,7 +758,7 @@
             </div>
 
 
-  <div class="panel-group" id="accordion">
+  <!-- <div class="panel-group" id="accordion">
     <div class="panel panel-default">
        <div class="panel-heading" >
         <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
@@ -796,7 +796,28 @@
         <div class="panel-body">sth sth sth...............................</div>
       </div>
     </div>
-  </div> 
+  </div>  -->
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#trans">Transportation</a></li>
+  <li><a data-toggle="tab" href="#food">Food</a></li>
+  <li><a data-toggle="tab" href="#accomo">Accomodation</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="trans" class="tab-pane fade in active">
+   <div id="map_wrapper">
+    <div id="map_canvas" class="mapping"></div>
+</div>
+  </div>
+  <div id="food" class="tab-pane fade">
+      <p>sth sth sth...............................</p>
+  </div>
+  <div id="accomo" class="tab-pane fade">
+       <p>sth sth sth...............................</p>
+  </div>
+</div>
+
+
 </div>
 
 </section>
@@ -964,7 +985,7 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/topics.js"></script>
+  <!--  <script src="assets/js/topics.js"></script> -- >
           <script type="text/javascript">
        if($(window).width()<300)
        {

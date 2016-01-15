@@ -4024,6 +4024,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li {
   float: left;
   margin-bottom: -1px;
+  width: 33%;
 }
 .nav-tabs > li > a {
   margin-right: 2px;
