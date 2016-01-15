@@ -713,3 +713,9 @@ font-weight: 700;
 .details{
   background-color: rgba(0,0,0,.4);
 }
+.black-color{
+  background-color: black;
+}
+.white-color{
+  background-color: white;
+}
