@@ -493,6 +493,9 @@ section:nth-child(even){
   text-align: center;
   color: #313131;
   margin: 25px 0;
+  background-color: rgba(255,255,255,1);
+  border-radius: 10px;
+
 }
 .speaker h4 {
   margin-top: 15px;
