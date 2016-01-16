@@ -461,6 +461,9 @@ font-weight: 700;
   section.module.parallax {
     padding: 20px 0;
   }
+section:nth-child(even){
+  background-color: white;
+}
 
 }
 @media all and (min-width: 960px) {
@@ -703,19 +706,13 @@ font-weight: 700;
 }
 
 
-/* Topics */
-.topics {
-  background-color: rgba(255,255,255,.3);
-}
+
 .body-container
 {
   
   background: url(../images/backgrounds/header.jpg) no-repeat center center/cover fixed;
 }
-/*Details*/
-.details{
-  background-color: rgba(0,0,0,.4);
-}
+
 .black-color{
   background-color: black;
 }
