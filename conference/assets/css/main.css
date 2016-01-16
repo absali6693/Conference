@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  color: #4e4e4e;
+  color: #fff;
   font-family: Gotham-Bold;
   font-size: 16px;
   font-weight: 300;
@@ -245,10 +245,10 @@ ul li {
 }
 
 .bg-image-2 {
-  background: url(../images/backgrounds/bg-2.jpg) no-repeat center bottom/cover;
+  background: url(../images/backgrounds/bg-2.jpg) no-repeat center center/cover;
 }
 .bg-image-2::before {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 768px) {
