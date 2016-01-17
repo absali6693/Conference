@@ -868,56 +868,67 @@
         </div>
     </section>
 -->
+
 <section id="contact">
-	<B>Contact us</B>
-	<div class="col-md-6">
-			<p>Address- <br>Ujjain Engineering College Ujjain </p>
-		</div>
-		<div class="col-md-6">
-	<form id="contactForm" action="#" method="POST" name="contactForm" onsubmit="return validateForm()">
-		<b> For any query, contact us by providing your details below- </b> <br>
-			Name:<br>
-			
-			
-			<input type="text" name="name" placeholder="your name" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" >
-			
-			<br>
-			E-mail:<br>
-			
-			<input type="text" name="email" id="email" placeholder="iam@domain.com" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'">
-			
-			<br>
-			Message:<br>
-			<div class="row">
-			<textarea id="message" class="input" name="message" rows="7" cols="30" placeholder="your query" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'"></textarea><br/>
-			</div>
-		<input type="submit" value="Send">
-
-	</form>
-
-			
-                    		<!--			<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-					<div class="row">
-					<label for="name">Your name:</label><br />
-					<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-					</div>
-					<div class="row">
-					<label for="email">Your email:</label><br />
-					<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-					</div>
-					<div class="row">
-					<label for="message">Your message:</label><br />
-					<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-					</div>
-					<input id="submit_button" type="submit" value="Send email" color: "red"/>
-					</form>								
- 				-->
-		</div>
+<h3 class="section-title">Contact Us</h3>
 </section>
 
     <footer class="site-footer">
         <div class="container">
             <div class="row">
+		<div class="col-md-6">
+			<p><b><h1><font color="aqua">Address- <br><br>Ujjain Engineering College, Ujjain </font></h1></b></p>
+		</div>
+		<div class="col-md-6">
+
+
+<form class="form-horizontal" role="form" method="post" action="#" id="contactForm" name="contactForm" onsubmit="return validateForm()" >
+<!--	 <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+
+	<div class = "alert alert-danger alert-dismissable" id="demo" class="collapse in">
+   	<button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true">
+      	&times;
+   	</button>
+	
+	   Error ! Change few things.
+	</div>
+ 	
+
+            <! Will be used to display an alert to the user>
+        </div>
+    </div>    
+-->
+<div class="form-group">
+        <label for="name" class="col-sm-2 control-label"><b><font color="yellow">Name</font></b></label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" value="" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" >
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email" class="col-sm-2 control-label"><b><font color="yellow">Email</font></b></label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" >
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="message" class="col-sm-2 control-label"><b><font color="yellow">Message</font></b></label>
+        <div class="col-sm-10">
+            <textarea id="message" name="message" placeholder="Your message" class="form-control" rows="4" name="message" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" ></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+        </div>
+    </div>
+   
+</form>
+
+
+		</div>
+
+
                 <div class="col-md-12">
                     <p class="site-info">Designed and <br> Developed by <a href="http://technextit.com">Technext Limited</a></p>
                     <ul class="social-block">
@@ -927,9 +938,11 @@
                         <li><a href=""><i class="ion-social-googleplus"></i></a></li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </footer>
+
 
     <!-- script -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
