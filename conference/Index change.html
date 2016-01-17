@@ -1,83 +1,96 @@
-    <!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Conference</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+ <title>Conference</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
     <script src="assets/js/contact.js"></script>
     <link rel='stylesheet' type='text/css' href='css/style.css' /> 
-
-
-
     <link rel="shortcut icon" href="../favicon.ico"> 
         <link rel="stylesheet" type="text/css" href="css/default.css" />
         <link rel="stylesheet" type="text/css" href="css/component.css" />
+           <link rel="stylesheet" type="text/css" href="css/bootstrap_schedule.css" />
         <script src="js/jquery-2.1.3.min.js"></script> 
         <script src="js/modernizr.custom.js"></script>
    
-    <script type='text/javascript' src='js/infogrid.js'></script>        
+    <script type='text/javascript' src='js/infogrid.js'></script> 
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body data-spy="scroll" data-target="#site-nav">
-    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-vide-bg="video/ocean">
+
+<script src="js/jquery.vide.js"></script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default  navbar-fixed-top transparent-color" role="navigation">
         <div class="container">
-            <div class="navbar-header">
-
-                <!-- logo -->
-                <div class="site-branding">
-                    <a class="logo" href="Index change.html">
-                        <b style=" font-size:24px;">XYZ&nbsp;&nbsp;</b>
-                        <!-- logo image  -->
-                        <img src="logo/logo-56x56.png" alt="Logo">
-
-                        onference 2016
-                    </a>
-                </div>
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
 
-            </div><!-- /.navbar-header -->
+                <div class="site-branding">
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <b style=" font-size:24px;">XYZ&nbsp;&nbsp;</b>
+                        <!-- logo image  -->
+                        <img src="logo/logo-56x56.png" alt="Logo" style="    margin-top: -20px;      display: inline;">
 
-            <div class="collapse navbar-collapse" id="navbar-items">
+                        onference 2016
+                    </a>
+                </div>
+               
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse" >
                 <ul class="nav navbar-nav navbar-right">
-
-                    <!-- navigation menu -->
-                    <li><a data-scroll href="#topics">Topics</a></li>    
-                    <li><a data-scroll href="#details">Details</a></li>          
-                    <li><a data-scroll href="#submission">Submission</a></li>        
-                    <li><a data-scroll href="#speakers">Speakers</a></li>          
-                    <li><a data-scroll href="#schedule">Schedule</a></li>                     
-                    <li><a data-scroll href="#facilities">Facilities</a></li>
-                    <li><a data-scroll href="#partner">Partner</a></li>                       
-                    <li><a data-scroll href="#about">About</a></li>
-                    <li><a data-scroll href="#contact">Contact</a></li>
-                
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    
+                    <li><a class="page-scroll" href="#topics">Topics</a></li>    
+                           
+                    <li><a class="page-scroll" href="#speakers">Speakers</a></li>          
+                    <li><a class="page-scroll" href="#schedule">Schedule</a></li>                     
+                    <li><a class="page-scroll" href="#facilities">Facilities</a></li>
+                    <li><a class="page-scroll" href="#partner">Partner</a></li>                       
+                    <li><a class="page-scroll" href="#about">About</a></li>
+                    <li><a class="page-scroll" href="#contact">Contact</a></li>
                 </ul>
             </div>
-        </div><!-- /.container -->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
 
+    <!-- Intro Section -->
     <header id="site-header" class="site-header valign-center"> 
         <div class="intro">
 
@@ -109,8 +122,7 @@
     </header>
 
 
-
-    <section id="topics" class="module parallax parallax-1">
+    <section id="topics" class="module parallax parallax-1 topics">
         <div class="container">
          <div class="one">                
             <img id="topicbackground" src="assets/images/topics/blackboard.jpg">     
@@ -122,30 +134,25 @@
                          1. Plasma Science And Technology
                          2. Boolean Algebra
                          3. Computer Science
-                         4. Maze kro
-                         5. Hamse na ho paega
+                         4. Neuro Science
+                         5. Sentimental Analysis
                     </canvas>
                     <div style="visibility:hidden;display:none" id="mobile" class="mobile ">
                          1. Plasma Science And Technology<br>
                          2. Boolean Algebra<br>
                          3. Computer Science<br>
-                         4. Maze kro<br>
-                         5. Hamse na ho paega
+                         4. Neuro Science<br>
+                         5. Sentimental Analysis
                     </div>
                 </div>
         </div>
-    </section>
-
-
-
-
-
-    <section id="details">
-        <div id="page-wrap" class="page-wrap">
+        </div>
+       
+    <div id="page-wrap" class="page-wrap" >
         
         <div class="info-col">
         
-            <h2>Plasma</h2>
+            <h2>Plasma Science</h2>
             
             <a class="image plasma">View Image</a>
             
@@ -168,9 +175,9 @@
         
         <div class="info-col">
         
-             <h2>Plasma</h2>
+             <h2>Boolean Algebra</h2>
             
-            <a class="image plasma">View Image</a>
+            <a class="image boolean">View Image</a>
             
             <dl>
               <dt>Venue</dt>
@@ -191,9 +198,9 @@
         
         <div class="info-col">
         
-               <h2>Plasma</h2>
+               <h2>Computer Science</h2>
             
-            <a class="image plasma">View Image</a>
+            <a class="image comp">View Image</a>
             
             <dl>
               <dt id="starter">Venue</dt>
@@ -214,9 +221,9 @@
         
         <div class="info-col">
         
-              <h2>Plasma</h2>
+              <h2>Neuro Science</h2>
             
-            <a class="image plasma">View Image</a>
+            <a class="image neuron">View Image</a>
             
             <dl>
               <dt>Venue</dt>
@@ -237,9 +244,9 @@
         
         <div class="info-col">
         
-              <h2>Plasma</h2>
+              <h2>Semtimental Analysis</h2>
             
-            <a class="image plasma">View Image</a>
+            <a class="image senti">View Image</a>
             
             <dl>
               <dt>Venue</dt>
@@ -259,34 +266,20 @@
         </div>
             
     </div>
+  
     </section>
 
-
-
-    <section id="submission" class="section bg-image-2 submission">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="text-uppercase mt0 font-400">Submit Your Contribution Work</h3>
-                    
-                    <p>You've inspired new consumer, racked up click-thru's, blown-up brand awareness. We can't give you back the weekends you worked, or erase the pain of being forced to make the logo bigger. But if you submit your best work.</p>
-
-                    <a class="btn btn-white" href="#">Submit</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <section class="body-container">
     <section id="speakers" class="section speakers">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
 
-                    <h3 class="section-title">Speakers</h3>
+                    <h3 class="section-title" style="color:#fff;">Speakers</h3>
                 
                 </div>
             </div>
-<div class="row">
+            <div class="row">
                 <div class="col-md-12">
 
             <div class="row">
@@ -414,364 +407,507 @@
         </div>
     </section>
    <!--schedule code-->
-    <section id="schedule" class="section schedule">
-        <div class="container" >
-
-           
-        
-          
- <div class="two">
-      <nav class="fixed-nav-bar" > 
-              Events Schedule
-     </div><!-- nav bar -->
-<!--new code-->
-
-
-<div class="schedulePanel">
-<div class="panel-group" id="accordion"> <!-- accordion 1 -->
-   <div class="panel panel-info" >
-   
-        <div class="panel-heading"> <!-- panel-heading -->
-            <h4 class="panel-title"> <!-- title 1 -->
-            <a data-toggle="collapse" class="conferenceLink" data-parent="#accordion" href="#accordionOne">
-              International Conference of Nuclear Sciences  By "HTML BABA"(Click for detail)
-            </a>
-           </h4>
-        </div>
-    <!-- panel body -->
-        <div id="accordionOne" class="panel-collapse collapse ">
-          <!--what to show-->
-          <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="09:00">09:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Introduction</h3>
-                        <p>Abbas Ali</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Tips and share</h3>
-                        <p>Siddhant Mehta</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Chai pe Charcha</h3>
-                        <p> By Ujjwal Joshi</p>
-                    </div>
+    <section id="schedule" class="section schedule" style="background:#3F6184;" >
+    <div class="container">
+        <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title" style="color:#fff;">Schedule</h3>
                 </div>
             </div>
-          <!--what to show-->
+                      <!--new code-->
+
+      <div class="schedule_div schedule_container"> <!-- div for schedule -->
+  <ul class="nav schedule-tabs" >
+    <li class="active"><a data-toggle="tab" href="#day1">DAY1<br>02.02.2016</a></li>
+    <li><a data-toggle="tab" href="#day2">DAY2<br>03.02.2016</a></li>
+    <li><a data-toggle="tab" href="#day3">DAY3<br>04.02.2016</a></li>
+    <li><a data-toggle="tab" href="#day4">DAY4<br>05.02.2016</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="day1" class="tab-pane fade in active">
+            
+        <!-- Day 1  Different rooms Start -->
+      <ul class="nav schedule-pills">
+    <li class="active"><a data-toggle="pill" href="#day1_hall1">HALL A</a></li>
+    <li><a data-toggle="pill" href="#day1_hall2">HALL B</a></li>
+    <li><a data-toggle="pill" href="#day1_hall3">HALL C</a></li>
+    <li><a data-toggle="pill" href="#day1_hall4">HALL D</a></li>
+  </ul>
+            <div class="tab-content">
+    <div id="day1_hall1" class="tab-pane fade in active">
+      <!-- Day 1 HALL A Lesson1 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-1.jpg" class="img-circle" alt="" width="150" height="150">
         </div>
+        <div class= "col-md-9 well  "style="float:left;">
+        <h4 style="color: red;"> 08:00 -08:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 1 HALL A - Lesson 1</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Pranav Mistry</b> / Global Research Head at Samsung </p>
+          </div>
+      </div>
+      <!-- Day 1 HALL A Lesson1 speaker row content end -->
+       <!-- Day 1 HALL A Lesson2 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-1.jpg" class="img-circle" alt="" width="150" height="150">
+        </div>
+        <div class= "col-md-9 well">
+        <h4 style="color: red;"> 09:00 -09:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 1 HALL A - Lesson 2</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Salman Khan</b> / Founder - Khan Academy </p>
+          </div>
+      </div>
+      <!-- Day 1 HALL A Lesson 2 speaker row content end -->
+       <!-- Day 1 HALL A Lesson3 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-3.jpg" class="img-circle" alt="" width="150" height="150">
+        </div>
+        <div class= "col-md-9 well">
+        <h4 style="color: red;"> 13:00 -13:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 1 HALL A - Lesson 3</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Shadhha Sharma</b> / Co-Founder - Yourstory </p>
+          </div>
+      </div>
+      <!-- Day 1 HALL A Lesson 3 speaker row content end -->
+        <!-- Day 1 HALL A Lesson4 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-4.jpg" class="img-circle" alt="" width="150" height="150">
+        </div>
+        <div class= "col-md-9 well">
+        <h4 style="color: red;"> 15:00 -15:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 1 HALL A - Lesson 4</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Sheryl Sandbery</b> / COO - Facebook </p>
+          </div>
+      </div>
+      <!-- Day 1 HALL A Lesson 4 speaker row content end -->
+
+    </div>
+    <div id="day1_hall2" class="tab-pane fade">
+
+    <!-- Day 1 HALL B Lesson1 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-2.jpg" class="img-circle" alt="" width="150" height="150">
+        </div>
+        <div class= "col-md-9 well  "style="float:left;">
+        <h4 style="color: red;"> 08:00 -08:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 1 HALL B - Lesson 1</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Drew Houston</b> /Etcc</p>
+          </div>
+      </div>
+      <!-- Day 1 HALL B Lesson1 speaker row content end -->
+       <!-- Day 1 HALL B Lesson2 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-1.jpg" class="img-circle" alt="" width="150" height="150">
+        </div>
+        <div class= "col-md-9 well">
+        <h4 style="color: red;"> 09:00 -09:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 1 HALL B - Lesson 2</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Peter Theil</b> / Founder - PayPal </p>
+          </div>
+      </div>
+      <!-- Day 1 HALL B Lesson 2 speaker row content end -->
+      
+            
+    </div>
+    <div id="day1_hall3" class="tab-pane fade">
+     
+    </div>
+    <div id="hall4.0" class="tab-pane fade">
+      
+    </div>
+  </div> <!-- End of DAY 1 all rooms tab content -->
+        <!-- Day 1 Diffent rooms end -->
+
+
+
+    </div><!-- End of day1 tab content -->
+    <div id="day2" class="tab-pane ">
+
+
+        <!-- Day 2 different rooms start -->
+         <ul class="nav schedule-pills">
+    <li class="active"><a data-toggle="pill" href="#day2_hall1">HALL A</a></li>
+    <li><a data-toggle="pill" href="#day2_hall2">HALL B</a></li>
+    <li><a data-toggle="pill" href="#day2_hall3">HALL C</a></li>
+    <li><a data-toggle="pill" href="#day2_hall4">HALL D</a></li>
+  </ul>
+            <div class="tab-content">
+    <div id="day2_hall1" class="tab-pane fade in active">
+      <!-- Day 2 HALL A Lesson1 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-1.jpg" class="img-circle" alt="" width="150" height="150">
+        </div>
+        <div class= "col-md-9 well  "style="float:left;">
+        <h4 style="color: red;"> 08:00 -08:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 2 HALL A - Lesson 1</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Pranav Mistry</b> / Global Research Head at Samsung </p>
+          </div>
+      </div>
+      <!-- Day 2 HALL A Lesson1 speaker row content end -->
+       <!-- Day 2 HALL A Lesson2 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-1.jpg" class="img-circle" alt="" width="150" height="150">
+        </div>
+        <div class= "col-md-9 well">
+        <h4 style="color: red;"> 09:00 -09:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 2 HALL A - Lesson 2</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Salman Khan</b> / Founder - Khan Academy </p>
+          </div>
+      </div>
+      <!-- Day 2 HALL A Lesson 2 speaker row content end -->
+       <!-- Day 2 HALL A Lesson3 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-3.jpg" class="img-circle" alt="" width="150" height="150">
+        </div>
+        <div class= "col-md-9 well">
+        <h4 style="color: red;"> 13:00 -13:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 2 HALL A - Lesson 3</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Shadhha Sharma</b> / Co-Founder - Yourstory </p>
+          </div>
+      </div>
+      <!-- Day 2 HALL A Lesson 3 speaker row content end -->
+        <!-- Day 2 HALL A Lesson4 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-4.jpg" class="img-circle" alt="" width="150" height="150">
+        </div>
+        <div class= "col-md-9 well">
+        <h4 style="color: red;"> 15:00 -15:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 2 HALL A - Lesson 4</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Sheryl Sandbery</b> / COO - Facebook </p>
+          </div>
+      </div>
+      <!-- Day 2 HALL A Lesson 4 speaker row content end -->
+
+    </div>
+    <div id="day2_hall2" class="tab-pane fade">
+            
+    </div>
+    <div id="day2_hall3" class="tab-pane fade">
+     
+    </div>
+    <div id="day2_hall4" class="tab-pane fade">
+      
+    </div>
   </div>
-  
-    <div class="panel panel-info" >
-   
-        <div class="panel-heading"> <!-- panel-heading -->
-            <h4 class="panel-title"> <!-- title 1 -->
-            <a data-toggle="collapse" class="conferenceLink" data-parent="#accordion" href="#accordionTwo">
-             Conferences and Meetings on Condensed Matter Physics and Materials By UJJWAL JOSHI
-            </a>
-           </h4>
+        <!-- Day 2 diffent rooms end -->
+
+      
+
+    </div><!-- End of day2 tab content -->
+    <div id="day3" class="tab-pane ">
+
+    <!-- Day 3 different rooms start -->
+        <ul class="nav schedule-pills">
+    <li class="active"><a data-toggle="pill" href="#day3_hall1">HALL A</a></li>
+    <li><a data-toggle="pill" href="#day3_hall2">HALL B</a></li>
+    <li><a data-toggle="pill" href="#day3_hall3">HALL C</a></li>
+    <li><a data-toggle="pill" href="#day3_hall4">HALL D</a></li>
+  </ul>
+            <div class="tab-content">
+    <div id="day3_hall1" class="tab-pane fade in active">
+      <!-- Day 3 HALL A Lesson1 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-1.jpg" class="img-circle" alt="" width="150" height="150">
         </div>
-    <!-- panel body -->
-        <div id="accordionTwo" class="panel-collapse collapse ">
-          <!--what to show-->
-          <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="09:00">09:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Introduction</h3>
-                        <p>Abbas Ali</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Tips and share</h3>
-                        <p>Siddhant Mehta</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Chai pe Charcha</h3>
-                        <p> By Ujjwal Joshi</p>
-                    </div>
-                </div>
-            </div>
-          <!--what to show-->
+        <div class= "col-md-9 well  "style="float:left;">
+        <h4 style="color: red;"> 08:00 -08:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 3 HALL A - Lesson 1</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Pranav Mistry</b> / Global Research Head at Samsung </p>
+          </div>
+      </div>
+      <!-- Day 3 HALL A Lesson1 speaker row content end -->
+       <!-- Day 3 HALL A Lesson2 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-1.jpg" class="img-circle" alt="" width="150" height="150">
         </div>
+        <div class= "col-md-9 well">
+        <h4 style="color: red;"> 09:00 -09:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 3 HALL A - Lesson 2</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Salman Khan</b> / Founder - Khan Academy </p>
+          </div>
+      </div>
+      <!-- Day 3 HALL A Lesson 2 speaker row content end -->
+       <!-- Day 3 HALL A Lesson3 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-3.jpg" class="img-circle" alt="" width="150" height="150">
+        </div>
+        <div class= "col-md-9 well">
+        <h4 style="color: red;"> 13:00 -13:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 3 HALL A - Lesson 3</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Shadhha Sharma</b> / Co-Founder - Yourstory </p>
+          </div>
+      </div>
+      <!-- Day 3 HALL A Lesson 3 speaker row content end -->
+        <!-- Day 3 HALL A Lesson4 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-4.jpg" class="img-circle" alt="" width="150" height="150">
+        </div>
+        <div class= "col-md-9 well">
+        <h4 style="color: red;"> 15:00 -15:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 3 HALL A - Lesson 4</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Sheryl Sandbery</b> / COO - Facebook </p>
+          </div>
+      </div>
+      <!-- Day 3 HALL A Lesson 4 speaker row content end -->
+
+    </div>
+    <div id="day3_hall2" class="tab-pane fade">
+            
+    </div>
+    <div id="day3_hall3" class="tab-pane fade">
+     
+    </div>
+    <div id="day3_hall4" class="tab-pane fade">
+      
+    </div>
   </div>
-  <!--second link-->
+        <!-- Day 3 diffent rooms end -->
+      
+    </div><!-- End of day3 tab content -->
+    <div id="day4" class="tab-pane ">
 
 
 
-<div class="panel panel-info" >
-   
-        <div class="panel-heading"> <!-- panel-heading -->
-            <h4 class="panel-title"> <!-- title 1 -->
-            <a data-toggle="collapse" class="conferenceLink" data-parent="#accordion" href="#accordionThree">
-            International Conference on Theoretical and Experimental Studies in Nuclear Applications and Technology By SHREYA PATWARDHAN
-            </a>
-           </h4>
+    <!-- Day 4 different rooms start -->
+          <ul class="nav schedule-pills">
+    <li class="active"><a data-toggle="pill" href="#day4_hall1">HALL A</a></li>
+    <li><a data-toggle="pill" href="#day4_hall2">HALL B</a></li>
+    <li><a data-toggle="pill" href="#day4_hall3">HALL C</a></li>
+    <li><a data-toggle="pill" href="#day4_hall4">HALL D</a></li>
+  </ul>
+            <div class="tab-content">
+    <div id="day4_hall1" class="tab-pane fade in active">
+      
+    </div>
+    <div id="day4_hall2" class="tab-pane fade">
+            
+    </div>
+    <div id="day4_hall3" class="tab-pane fade">
+     
+    </div>
+    <div id="day4_hall4" class="tab-pane fade">
+
+    <!-- Day 4 HALL D Lesson1 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-2.jpg" class="img-circle" alt="" width="150" height="150">
         </div>
-    <!-- panel body -->
-        <div id="accordionThree" class="panel-collapse collapse ">
-          <!--what to show-->
-          <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="09:00">09:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Introduction</h3>
-                        <p>Abbas Ali</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Tips and share</h3>
-                        <p>Siddhant Mehta</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Chai pe Charcha</h3>
-                        <p> By Ujjwal Joshi</p>
-                    </div>
-                </div>
-            </div>
-          <!--what to show-->
+        <div class= "col-md-9 well  "style="float:left;">
+        <h4 style="color: red;"> 08:00 -08:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 4 HALL D - Lesson 1</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Pranav Mistry</b> / Global Research Head at Samsung </p>
+          </div>
+      </div>
+      <!-- Day 4 HALL D Lesson1 speaker row content end -->
+       <!-- Day 4 HALL D Lesson2 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-4.jpg" class="img-circle" alt="" width="150" height="150">
         </div>
+        <div class= "col-md-9 well">
+        <h4 style="color: red;"> 09:00 -09:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 4 HALL D - Lesson 2</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Salman Khan</b> / Founder - Khan Academy </p>
+          </div>
+      </div>
+      <!-- Day 4 HALL D Lesson 2 speaker row content end -->
+       <!-- Day 4 HALL D Lesson3 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-3.jpg" class="img-circle" alt="" width="150" height="150">
+        </div>
+        <div class= "col-md-9 well">
+        <h4 style="color: red;"> 13:00 -13:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 4 HALL D - Lesson 3</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Shadhha Sharma</b> / Co-Founder - Yourstory </p>
+          </div>
+      </div>
+      <!-- Day 4 HALL D Lesson 3 speaker row content end -->
+        <!-- Day 4 HALL D Lesson4 speaker row content start -->
+      <div class="row container">
+        <br>
+        <br>
+        <div class="col-md-2">
+          <img src="assets/images/speakers/speaker-1.jpg" class="img-circle" alt="" width="150" height="150">
+        </div>
+        <div class= "col-md-9 well">
+        <h4 style="color: red;"> 15:00 -15:45</h4>
+        <h3 style="color: red; font-weight: bold;"> DAY 4 HALL D - Lesson 4</h3> <hr>
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p> <b>Sheryl Sandbery</b> / COO - Facebook </p>
+          </div>
+      </div>
+      <!-- Day 4 HALL D Lesson 4 speaker row content end -->
+      
+    </div>
   </div>
+        <!-- Day 4 diffent rooms end -->
+     
+
+    </div> <!-- End of day3 tab content -->
+  </div> <!-- End of tab main(Day) tab content -->
+</div><!-- End of schedule div -->
 
 
 
 
-  <div class="panel panel-info">  <!-- accordion 3 -->
-  
-        <div class="panel-heading">
-          <h4 class="panel-title"> <!-- title 3 -->
-            <a data-toggle="collapse" class="conferenceLink" data-parent="#accordion" href="#accordionFour">
-              United Nations Conference on International Organization By "SHRUTI SHARMA"
-            </a>
-          </h4>
-        </div>
-    
-        <div id="accordionFour" class="panel-collapse collapse">
-          <!--what to show-->
-          <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="09:00">09:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Introduction</h3>
-                        <p>Abbas Ali</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Tips and share</h3>
-                        <p>Siddhant Mehta</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Chai pe Charcha</h3>
-                        <p> By Ujjwal Joshi</p>
-                    </div>
-                </div>
-            </div>
-          <!--what to show-->
-    
-     </div>
-   
- </div>
-    <!--third link-->
 
 
-<div class="panel panel-danger" id="LastScheduleDivision">  <!-- accordion 3 -->
-  
-        <div class="panel-heading">
-          <h4 class="panel-title"> <!-- title 3 -->
-            <a data-toggle="collapse" class="conferenceLink" data-parent="#accordion" href="#accordionFive">
-             Bus bhut ho gya ... now no more conference By SIDDHANT MEHTA
-            </a>
-          </h4>
-        </div>
-    
-        <div id="accordionFive" class="panel-collapse collapse">
-          <!--what to show-->
-          <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="09:00">09:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Introduction</h3>
-                        <p>Abbas Ali</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Tips and share</h3>
-                        <p>Siddhant Mehta</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                       <h3>Chai pe Charcha</h3>
-                        <p> By Ujjwal Joshi</p>
-                    </div>
-                </div>
-            </div>
-          <!--what to show-->
-    
-     </div>
-   
- </div><!--fourth link-->
-
-    
-<div class="panel panel-danger" >
-   
-        <div class="panel-heading"> <!-- panel-heading -->
-            <h4 class="panel-title"> <!-- title 1 -->
-            <a data-toggle="collapse" class="conferenceLink" data-parent="#accordion" href="#accordionSix">
-             no more fund...! Bye bye ,Go and get a life
-            </a>
-           </h4>
-        </div>
-    <!-- panel body -->
-        <div id="accordionSix" class="panel-collapse collapse ">
-          <!--what to show-->
-          <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="09:00">09:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Introduction</h3>
-                        <p>Abbas Ali</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Tips and share</h3>
-                        <p>Siddhant Mehta</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="schedule-box">
-                        <div class="time">
-                            <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
-                        </div>
-                        <h3>Chai pe Charcha</h3>
-                        <p> By Ujjwal Joshi</p>
-                    </div>
-                </div>
-            </div>
-          <!--what to show-->
-        </div>
-  </div>
-
-
+              <!-- 
+               -->
 </div>
-
-<!--new code-->
-
-
-            </div>
-          </section>
+  </section>
 <!--schedule code end-->
 <section id="facilities" class="section facilities">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">Facilities</h3>
+                    <h3 class="section-title" style="color:#fff;">Facilities</h3>
                 </div>
             </div>
 
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#trans">Transportation</a></li>
+  <li><a data-toggle="tab" href="#food">Food</a></li>
+  <li><a data-toggle="tab" href="#accomo">Accomodation</a></li>
+</ul>
 
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-       <div class="panel-heading" >
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-        <h4 class="panel-title">
-          Food
-        </h4></a>
-      </div>
-      <div id="collapse1" class="panel-collapse collapse ">
-        <div class="panel-body">sth sth sth...............................</div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-        <h4 class="panel-title">
-          Transportation
-        </h4></a>
-      </div>
-      <div id="collapse2" class="panel-collapse collapse in">
-        <div class="panel-body">
-             <div id="map_wrapper">
+<div class="tab-content">
+  <div id="trans" class="tab-pane fade in active">
+   <div id="map_wrapper">
     <div id="map_canvas" class="mapping"></div>
 </div>
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-        <h4 class="panel-title">
-          Accomodation
-        </h4></a>
-      </div>
-      <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body">sth sth sth...............................</div>
-      </div>
-    </div>
-  </div> 
+  </div>
+  <div id="food" class="tab-pane fade">
+      <p>sth sth sth...............................</p>
+  </div>
+  <div id="accomo" class="tab-pane fade">
+       <p>sth sth sth...............................</p>
+  </div>
 </div>
 
-</section>
+
+</div>
+
 </section>
 
 
@@ -815,12 +951,12 @@
 
 
 
-    <section id="about" class="section about">
-        <div class="container">
+    <section id="about" class="section about" style="color:#fff;">
+        <div class="container" >
             <div class="row">
                 <div class="col-sm-6">
 
-                    <h3 class="section-title">About Us</h3>
+                    <h3 class="section-title" style="color:#fff;">About Us</h3>
 
                     <p>You've inspired new consumer, racked up click-thru's, blown-up brand enes. We can't give you back the weekends you worked, or erase the pain ebeing forced to make the logo bigger. But if you submit your best work we ajusts might be able to give the chance to show you best digital marketing.</p>
 
@@ -832,7 +968,7 @@
 
                 <div class="col-sm-6">
 
-                    <h3 class="section-title multiple-title">What is Our Goal?</h3>
+                    <h3 class="section-title multiple-title" style="color:#fff;">What is Our Goal?</h3>
 
                     <p>You've inspired new consumer, racked up click-thru's, blown-up brand enes. We can't give you back the weekends you worked, or erase the pain ebeing forced to make the logo bigger. But if you submit your best work we ajusts might be able to give the chance to show you best digital marketing.</p>
 
@@ -852,6 +988,8 @@
 
 
 
+
+
 <!--    <section id="location" class="section location">
         <div class="container">
             <div class="row">
@@ -868,18 +1006,120 @@
         </div>
     </section>
 -->
+<<<<<<< HEAD
 
 <section id="contact">
 <h3 class="section-title">Contact Us</h3>
-</section>
 
-    <footer class="site-footer">
+
+<!--
+
+<section id="contact" style="background:#3F6184; color:#fff;">
+
+<div class="container row">
+  
+  <div class="col-md-8">
+   <form method="POST" action="assets/php/contact.php" class="form-horizontal" id="contact-form">
+        <div class="control-group">
+            <label class="control-label" for="name">Name</label>
+            <div class="controls">
+                <input type="text" name="name" id="name" placeholder="Your name">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="email">Email Address</label>
+            <div class="controls">
+                <input type="text" name="email" id="email" placeholder="Your email address">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="subject">Subject</label>
+            <div class="controls">
+                <select id="subject" name="subject">
+                    <option value="na" selected="">Choose One:</option>
+                    <option value="service">Feedback</option>
+                    <option value="suggestions">Suggestion</option>
+                    <option value="support">Question</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="message">Message</label>
+            <div class="controls">
+                <textarea name="message" id="message" rows="8" class="span5" placeholder="The message you want to send to us."></textarea>
+            </div>
+        </div>
+        <div class="form-actions">
+            <input type="hidden" name="save" value="contact">
+            <button type="submit" class="btn btn-success">Submit Message</button>
+            <button type="reset" class="btn">Cancel</button>
+        </div>
+    </form>
+       <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/additional-methods.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function () {
+
+    $('#contact-form').validate({
+        rules: {
+            name: {
+                minlength: 2,
+                required: true
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            message: {
+                minlength: 2,
+                required: true
+            }
+        },
+        highlight: function (element) {
+            $(element).closest('.control-group').removeClass('success').addClass('error');
+        },
+        success: function (element) {
+            element.text('OK!').addClass('valid')
+                .closest('.control-group').removeClass('error').addClass('success');
+        }
+    });
+
+});
+
+
+    </script>
+
+
+
+  </div>
+
+-->
+  
+
+
+    <footer class="site-footer" style="background:#3F6184;" >
         <div class="container">
             <div class="row">
-		<div class="col-md-6">
-			<p><b><h1><font color="aqua">Address- <br><br>Ujjain Engineering College, Ujjain </font></h1></b></p>
+		<div class="col-md-4">
+
+			<h3>Contact:</h3>
+  			<h5>John Doe<h5>
+ 			 <i>Head of Department , Physics</i>
+ 			 <p>
+ 			 Phone: 8841161611<br>
+  				Email : info@conference.com
+  			</p>
+  			 <h5>John Doe<h5>
+  				<i>Head of Department , Physics</i>
+ 			 <p>
+ 				Phone: 8841161611<br>
+  			Email : info@conference.com
+ 			 </p> 
+			<p><b><h6><font color="aqua">Address- <br><br>Ujjain Engineering College, Ujjain </font></h6></b></p>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-8">
 
 
 <form class="form-horizontal" role="form" method="post" action="#" id="contactForm" name="contactForm" onsubmit="return validateForm()" >
@@ -902,7 +1142,7 @@
 <div class="form-group">
         <label for="name" class="col-sm-2 control-label"><b><font color="yellow">Name</font></b></label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" value="" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" >
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" value="" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" data-toggle="tooltip" data-placement="right" title="please fill" >
         </div>
     </div>
     <div class="form-group">
@@ -914,12 +1154,19 @@
     <div class="form-group">
         <label for="message" class="col-sm-2 control-label"><b><font color="yellow">Message</font></b></label>
         <div class="col-sm-10">
-            <textarea id="message" name="message" placeholder="Your message" class="form-control" rows="4" name="message" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" ></textarea>
+                   
+<textarea id="message" name="message" placeholder="Your message" class="form-control" rows="4" name="message" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" ></textarea>
+
         </div>
     </div>
     <div class="form-group">
         <div class="col-sm-10 col-sm-offset-2">
+ <div class="col-md-6">
             <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+		</div>
+ <div class="col-md-6">
+<input id="erase" name="erase" value="Cancel" type="erase" class="btn btn-primary" onclick="clearForm()">
+</div>
         </div>
     </div>
    
@@ -930,7 +1177,7 @@
 
 
                 <div class="col-md-12">
-                    <p class="site-info">Designed and <br> Developed by <a href="http://technextit.com">Technext Limited</a></p>
+                    <p class="site-info">Designed and <br> Developed by <a href="">Unagi</a></p>
                     <ul class="social-block">
                         <li><a href=""><i class="ion-social-twitter"></i></a></li>
                         <li><a href=""><i class="ion-social-facebook"></i></a></li>
@@ -945,11 +1192,12 @@
 
 
     <!-- script -->
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/topics.js"></script>
+   <script src="assets/js/topics.js"></script> 
           <script type="text/javascript">
        if($(window).width()<300)
        {
@@ -1035,5 +1283,17 @@ function loop() {
        }   
 
   </script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
 </body>
+
 </html>

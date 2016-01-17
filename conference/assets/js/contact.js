@@ -1,10 +1,35 @@
+document.getElementById("name").onclick = function() {validateName()};
+
+function validateName() {
+    if( document.contactForm.name.value == "" )
+         {
+	    //document.getElementById('nameLabel').innerHTML='Enter name!';
+            document.getElementById("name").style.borderColor = "red";
+            //alert( "Please provide your name!" );
+            //document.contactForm.name.focus() ;
+            return false;
+         }
+         else
+         {
+		document.getElementById("name").style.borderColor = "blue";
+}
+    
+    //document.getElementById("name").innerHTML = "YOU CLICKED ME!";
+}
+
+
+
+
 function validateForm()
 {
 
          if( document.contactForm.name.value == "" )
          {
 	    //document.getElementById('nameLabel').innerHTML='Enter name!';
-            alert( "Please provide your name!" );
+            document.getElementById("name").style.borderColor = "red";
+$("[data-toggle='tooltip']").tooltip('show');
+	    //document.getElementById("name").tooltip("show");
+            //alert( "Please provide your name!" );
             document.contactForm.name.focus() ;
             return false;
          }

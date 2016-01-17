@@ -1,9 +1,14 @@
 .info-col { float: left; width: 132px; height: 100%; padding: 20px 0 0 0; }
-.info-col h2 { text-align: center; font-size: 25px; padding: 25px 0; background-color: rgba(0,0,0,.3) }
+.info-col h2 { text-align: center; font-size: 20px; padding: 25px 0; background-color: #3F6184; color: #fff; }
 
 .image { height: 100px; text-indent: -9999px; display: block; border-right: 1px solid white; }
 
 .plasma { background: url(../images/1.jpg) center center no-repeat; }
+.boolean { background: url(../images/2.jpg) center center no-repeat; }
+.comp { background: url(../images/3.jpg) center center no-repeat; }
+.neuron { background: url(../images/4.jpg) center center no-repeat; }
+.senti { background: url(../images/5.jpg) center center no-repeat; }
+
 
 dt { padding: 5px; background: #900; color: black; border-bottom: 1px solid white; border-right: 1px solid white; }
 dd { position: absolute; left: -9999px; top: -9999px; width: 100%; background: #900; padding: 10px; color: black; border-right: 1px solid white; margin-left: 0px;}
