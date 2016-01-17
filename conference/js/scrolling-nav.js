@@ -4,6 +4,7 @@ $(window).scroll(function() {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
         $(".navbar-fixed-top").removeClass("transparent-color");
         $(".navbar-fixed-top").addClass("black-color");
+       
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
         $(".navbar-fixed-top").removeClass("black-color");

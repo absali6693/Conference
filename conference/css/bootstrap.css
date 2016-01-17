@@ -1097,12 +1097,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #3F6184;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #fff;
   text-decoration: underline;
 }
 a:focus {
@@ -2529,6 +2529,12 @@ input[type="file"] {
 input[type="range"] {
   display: block;
   width: 100%;
+}
+input[type="text"] , input[type="email"] , textarea {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+  
 }
 select[multiple],
 select[size] {
@@ -4031,9 +4037,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 1.42857143;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
+  color: #fff;
+  text-align: center;
 }
 .nav-tabs > li > a:hover {
-  border-color: #eee #eee #ddd;
+  border-color: transparent;
+  background: transparent;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
@@ -4184,6 +4193,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-collapse {
+  color: #000;
   padding-right: 15px;
   padding-left: 15px;
   overflow-x: visible;
@@ -4216,6 +4226,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-fixed-bottom .navbar-collapse {
     padding-right: 0;
     padding-left: 0;
+
   }
 }
 .navbar-fixed-top .navbar-collapse,
