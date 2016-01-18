@@ -13,6 +13,7 @@
     <!-- css -->
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
     <script src="assets/js/contact.js"></script>
     <link rel='stylesheet' type='text/css' href='css/style.css' /> 
     <link rel="shortcut icon" href="../favicon.ico"> 
@@ -1008,96 +1009,128 @@
 
 
 <section id="contact">
-<h3 class="section-title">Contact Us</h3>
+	
 
 
 
+  <footer class="site-footer" style="background:#3F6184;" > 
+  	<b><h3  style="padding-left:100px;" class="topic section-title">Contact Us</h3>  </b>    
 
-<section id="contact" style="background:#3F6184; color:#fff;">
+<!--	<section id="contact" style="background:#3F6184; color:#fff;">  style="padding:50px; padding-top:80px;" -->
 
-<div class="container row">
+	<div class="container row">
   
-  <div class="col-md-8">
-   <form method="POST" action="assets/php/contact.php" class="form-horizontal" id="contact-form" style="padding:50px; padding-top:80px;">
-        <div class="control-group">
-            <label class="control-label" for="name">Name</label>
-            <div class="controls">
-                <input type="text" name="name" id="name" placeholder="Your name">
-            </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label" for="email">Email Address</label>
-            <div class="controls">
-                <input type="text" name="email" id="email" placeholder="Your email address">
-            </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label" for="subject">Subject</label>
-            <div class="controls">
-                <select id="subject" name="subject" style="    height: 32px;    border-radius: 10px;    width: 100%;">
-                    <option value="na" selected="">Choose One:</option>
-                    <option value="service">Feedback</option>
-                    <option value="suggestions">Suggestion</option>
-                    <option value="support">Question</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label" for="message">Message</label>
-            <div class="controls">
-                <textarea name="message" id="message" rows="8" class="span5" placeholder="The message you want to send to us."></textarea>
-            </div>
-        </div>
-        <div class="form-actions">
-            <input type="hidden" name="save" value="contact">
-            <button type="submit" class="btn btn-success">Submit Message</button>
-            <button type="reset" class="btn">Cancel</button>
-        </div>
-    </form>
-       <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
-    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/additional-methods.js"></script>
+  		<div class="col-md-8">
+   			<form  style="padding:100px;" method="POST" role="form" name="contactForm" onsubmit="return validateForm()" action="assets/php/contact.php" class="form-horizontal" id="contact-form">        		
+				<div class="control-group">
+            			<label align="left" class="control-label" for="name">Name</label>
+            			<div class="controls">
+                			<input type="text" name="name" id="name" class="my form-control" placeholder="Your name..." onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" data-toggle="tooltip" data-placement="right" title="Enter your name." >
+            			</div>
+        		</div>
+        		<div class="control-group">
+            			<label class="control-label" for="email">Email</label>
+            			<div class="controls">
+                			<input type="text" class="my form-control" name="email" id="email" placeholder="Your email address..." onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" data-toggle="tooltip" data-placement="right" title="Enter your email." >
+            			</div>
+        		</div>
+        		<div class="control-group">
+            			<label class="control-label" for="subject">Subject</label>
+            			<div class="controls">
+                				<select class="my" id="subject" name="subject" style="    height: 32px;    border-radius: 10px;    width: 100%;" data-toggle="tooltip" data-placement="right" title="Select appropriate subject.">
+                    				<option style="color:gray" value="null" selected="">Choose One:</option>
+                    				<option value="service" class="others">Feedback</option>
+                    				<option value="suggestions" class="others">Suggestion</option>
+                    				<option value="support" class="others">Question</option>
+                    				<option value="other" class="others">Other</option>
+                				</select>
+            			</div>
+        		</div>
+        		<div class="control-group">
+            			<label class="control-label" for="message">Message</label>
+            			<div class="controls">
+                			<textarea name="message" id="message" rows="8" class="my span5" placeholder="The message you want to send to us..." onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" data-toggle="tooltip" data-placement="right" title="Enter your message."></textarea>
+            			</div>
+        		</div>
+        		<div class="form-actions">
+            			<input type="hidden" name="save" value="contact">
+				<div class="col-md-6">
+            			<button type="submit" class="btn btn-success">Submit Message</button>
+				</div>
+				<div class="col-md-6">
+            			<button type="reset" class="btn" onclick="resetForm()">Cancel</button>
+				</div>
+       			 </div>
+    			</form>
+       			<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+    			<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/additional-methods.js"></script>
     
-    <script type="text/javascript">
-      $(document).ready(function () {
+    		<script type="text/javascript">
+     			 $(document).ready(function () {
 
-    $('#contact-form').validate({
-        rules: {
-            name: {
-                minlength: 2,
-                required: true
-            },
-            email: {
-                required: true,
-                email: true
-            },
-            message: {
-                minlength: 2,
-                required: true
-            }
-        },
-        highlight: function (element) {
-            $(element).closest('.control-group').removeClass('success').addClass('error');
-        },
-        success: function (element) {
-            element.text('OK!').addClass('valid')
+    			 $('#contact-form').validate({
+        		 rules: {
+            		name: {
+              		  minlength: 2,
+             		   required: true
+           		 },
+         		   email: {
+           		     required: true,
+           		     email: true
+         		   },
+         		   message: {
+          		      minlength: 2,
+          		      required: true
+           			 }
+      			  },
+       			 highlight: function (element) {
+         		   $(element).closest('.control-group').removeClass('success').addClass('error');
+       				 },
+       			 success: function (element) {
+         		   element.text('OK!').addClass('valid')
                 .closest('.control-group').removeClass('error').addClass('success');
-        }
-    });
+      			  }
+    		});
 
-});
+		});
 
 
     </script>
 
 
 
-  </div>
-  <div class="col-md-4" style="padding:50px;">
+ 		 </div>
+		<div class="col-md-4"  style="padding:100px;">
+
+			
+			<h2>Contact:</h2>
+  			<h4>John Doe<h4>
+ 			<h5> <i>Head of Department , Physics</i>
+ 			 <p>
+ 			 Phone: 8841161611<br>
+  				Email : info@conference.com
+  			</p>
+
+			<p><b><font color="white">Address- <br><br>Ujjain Engineering College, Ujjain </font></h5></b></p>
+                  	<br><br><br>
+                        <h4> <p class="site-info">Designed and <br> Developed by <a href="">Unagi</a></p>
+                        <ul class="social-block">
+                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul> </h4>
+                </div>
+	</div>
+</footer>
+</section>
+
+ <!--  ---------------------------------------------------------------------
+<div class="col-md-4" style="padding:50px;">
 
 
 
-  <!--  <footer class="site-footer" style="background:#3F6184;" >
+   <footer class="site-footer" style="background:#3F6184;" >
         <div class="container">
             <div class="row">
 		
@@ -1105,7 +1138,7 @@
 
 
 			<form class="form-horizontal" role="form" method="post" action="#" id="contactForm" name="contactForm" onsubmit="return validateForm()" >
-		<!--	 <div class="form-group">
+			 <div class="form-group">
        			 <div class="col-sm-10 col-sm-offset-2">
 
 			<div class = "alert alert-danger alert-dismissable" id="demo" class="collapse in">
@@ -1151,34 +1184,11 @@
 </form>
 
 
-		</div>-->
-<div class="col-md-6">
-
-			<h3>Contact:</h3>
-  			<h5>John Doe<h5>
- 			 <i>Head of Department , Physics</i>
- 			 <p>
- 			 Phone: 8841161611<br>
-  				Email : info@conference.com
-  			</p>
-
-			<p><b><h6><font color="aqua">Address- <br><br>Ujjain Engineering College, Ujjain </font></h6></b></p>
-		</div>
+		</div>  
+-------------------------------------------------------------------------------------  -->
 
 
-                <div class="col-md-12">
-                    <p class="site-info">Designed and <br> Developed by <a href="">Unagi</a></p>
-                    <ul class="social-block">
-                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
-                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
-                        <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
-                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </footer>
+           
 
 
     <!-- script -->

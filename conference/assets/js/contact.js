@@ -1,6 +1,30 @@
+function resetForm()
+{
+//alert("reset");
+document.getElementById("name").style.borderColor = "";
+            	$("[data-toggle='tooltip']").tooltip('hide');
+document.getElementById("email").style.borderColor = "";
+            	$("[data-toggle='tooltip']").tooltip('hide');
+document.getElementById("message").style.borderColor = "";
+            	$("[data-toggle='tooltip']").tooltip('hide');
+document.getElementById("subject").style.borderColor = "";
+            	$("[data-toggle='tooltip']").tooltip('hide');
+return true;
+}
 function validateForm()
 {
 	 var ss=0;
+ 	 if(document.getElementById("subject").value=="null")
+   	 {
+	 document.getElementById("subject").style.borderColor = "red";
+   	 $("[data-toggle='tooltip']").tooltip('show');
+   	 ss=7;
+   	 }
+	 else
+	 {
+ 	 document.getElementById("subject").style.borderColor = "";
+	 $("[data-toggle='tooltip']").tooltip('hide');
+	 }
          if( document.contactForm.name.value == "" )
          {
             document.getElementById("name").style.borderColor = "red";
@@ -91,7 +115,7 @@ function validateForm()
             	$("[data-toggle='tooltip']").tooltip('hide');
 	}
 
-if(ss==1 || ss==2 || ss==3)
+if(ss==1 || ss==2 || ss==3 || ss==7 )
 {
 return false;
 }

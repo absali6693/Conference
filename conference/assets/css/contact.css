@@ -14,23 +14,21 @@ color : orange ;
   width: 20em;
   height: 2em;
 }
-input, select, textarea {
+.topic
+{
+color:white;
+}
+.my
+{
+color:black;
+}
+
+label {
+
+display: inline-block;
 color: black;
 }
-label {
-color: red;
-}
-
-.form-wrapper input[type="erase"] {
-
-  display: block;
-  background: #aaa;
-  color: #aaa;
-  border: none;
-  padding: 10px 20px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  cursor: pointer;
-  width: 20em;
-  height: 2em;
+.others 
+{
+color:black;
 }
