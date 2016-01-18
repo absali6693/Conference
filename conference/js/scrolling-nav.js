@@ -4,11 +4,15 @@ $(window).scroll(function() {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
         $(".navbar-fixed-top").removeClass("transparent-color");
         $(".navbar-fixed-top").addClass("black-color");
+        $(".a-color").removeClass("white-color");
+        $(".a-color").addClass("blue-color");
        
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
         $(".navbar-fixed-top").removeClass("black-color");
         $(".navbar-fixed-top").addClass("transparent-color");
+        $(".a-color").addClass("white-color");
+        $(".a-color").removeClass("blue-color");
     }
 });
 
