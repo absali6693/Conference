@@ -1016,28 +1016,26 @@
   <footer class="site-footer" style="background:#3F6184;" > 
   	<b><h3  style="padding-left:100px;" class="topic section-title">Contact Us</h3>  </b>    
 
-<!--	<section id="contact" style="background:#3F6184; color:#fff;">  style="padding:50px; padding-top:80px;" -->
-
 	<div class="container row">
   
   		<div class="col-md-8">
-   			<form  style="padding:100px;" method="POST" role="form" name="contactForm" onsubmit="return validateForm()" action="assets/php/contact.php" class="form-horizontal" id="contact-form">        		
+   			<form  style="padding-left:20px;" method="POST" role="form" name="contactForm" onsubmit="return validateForm()" action="assets/php/contact.php" class="form-horizontal" id="contact-form">        		
 				<div class="control-group">
             			<label align="left" class="control-label" for="name">Name</label>
             			<div class="controls">
-                			<input type="text" name="name" id="name" class="my form-control" placeholder="Your name..." onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" data-toggle="tooltip" data-placement="right" title="Enter your name." >
+                			<input type="text" style="color: #000000;" name="name" id="name" class="my form-control" placeholder="Your name..." onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" data-toggle="tooltip" data-placement="right" title="Enter your name." >
             			</div>
         		</div>
         		<div class="control-group">
             			<label class="control-label" for="email">Email</label>
             			<div class="controls">
-                			<input type="text" class="my form-control" name="email" id="email" placeholder="Your email address..." onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" data-toggle="tooltip" data-placement="right" title="Enter your email." >
+                			<input type="text" style="color: #000000;" class="my form-control" name="email" id="email" placeholder="Your email address..." onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" data-toggle="tooltip" data-placement="right" title="Enter your email." >
             			</div>
         		</div>
         		<div class="control-group">
             			<label class="control-label" for="subject">Subject</label>
             			<div class="controls">
-                				<select class="my" id="subject" name="subject" style="    height: 32px;    border-radius: 10px;    width: 100%;" data-toggle="tooltip" data-placement="right" title="Select appropriate subject.">
+                				<select class="my" id="subject" name="subject" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" style="height: 32px; border-radius: 10px; width: 100%;" data-toggle="tooltip" data-placement="right" title="Select appropriate subject.">
                     				<option style="color:gray" value="null" selected="">Choose One:</option>
                     				<option value="service" class="others">Feedback</option>
                     				<option value="suggestions" class="others">Suggestion</option>
@@ -1049,7 +1047,7 @@
         		<div class="control-group">
             			<label class="control-label" for="message">Message</label>
             			<div class="controls">
-                			<textarea name="message" id="message" rows="8" class="my span5" placeholder="The message you want to send to us..." onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" data-toggle="tooltip" data-placement="right" title="Enter your message."></textarea>
+                			<textarea name="message" style="color: #000000;" id="message" rows="8" class="my span5" placeholder="The message you want to send to us..." onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" data-toggle="tooltip" data-placement="right" title="Enter your message."></textarea>
             			</div>
         		</div>
         		<div class="form-actions">
@@ -1100,7 +1098,7 @@
 
 
  		 </div>
-		<div class="col-md-4"  style="padding:100px;">
+		<div class="col-md-4">
 
 			
 			<h2>Contact:</h2>
@@ -1125,67 +1123,6 @@
 </footer>
 </section>
 
- <!--  ---------------------------------------------------------------------
-<div class="col-md-4" style="padding:50px;">
-
-
-
-   <footer class="site-footer" style="background:#3F6184;" >
-        <div class="container">
-            <div class="row">
-		
-		<div class="col-md-6">
-
-
-			<form class="form-horizontal" role="form" method="post" action="#" id="contactForm" name="contactForm" onsubmit="return validateForm()" >
-			 <div class="form-group">
-       			 <div class="col-sm-10 col-sm-offset-2">
-
-			<div class = "alert alert-danger alert-dismissable" id="demo" class="collapse in">
-   			<button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true">
-      			&times;
-   			</button>
-	
-	   		Error ! Change few things.
-			</div>
- 	
-
-         		   <! Will be used to display an alert to the user>
-        			</div>
-	    			</div>    
-
-			<div class="form-group">
-        <label for="name" class="col-sm-2 control-label"><b><font color="yellow">Name</font></b></label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" value="" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" data-toggle="tooltip" data-placement="right" title="Enter your name." >
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="email" class="col-sm-2 control-label"><b><font color="yellow">Email</font></b></label>
-        <div class="col-sm-10">
-<input type="text" class="form-control" id="email" name="email" placeholder="example@domain.com" value="" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" data-toggle="tooltip" data-placement="right" title="Enter your email address." >
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="message" class="col-sm-2 control-label"><b><font color="yellow">Message</font></b></label>
-        <div class="col-sm-10">
-                   
-<textarea id="message" name="message" placeholder="Your message" class="form-control" rows="4" name="message" onfocus="this.style.background = '#ffd4ca'" onblur="this.style.background = 'white'" data-toggle="tooltip" data-placement="right" title="Enter your message"></textarea>
-
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
-
-            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-        </div>
-    </div>
-   
-</form>
-
-
-		</div>  
--------------------------------------------------------------------------------------  -->
 
 
            

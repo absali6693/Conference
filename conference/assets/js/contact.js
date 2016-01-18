@@ -13,41 +13,39 @@ return true;
 }
 function validateForm()
 {
-	 var ss=0;
- 	 if(document.getElementById("subject").value=="null")
-   	 {
-	 document.getElementById("subject").style.borderColor = "red";
-   	 $("[data-toggle='tooltip']").tooltip('show');
-   	 ss=7;
-   	 }
-	 else
-	 {
- 	 document.getElementById("subject").style.borderColor = "";
-	 $("[data-toggle='tooltip']").tooltip('hide');
-	 }
+	 var nm=0;
+var em=0;
+var sb=0;
+var msg=0;
+ 	 
          if( document.contactForm.name.value == "" )
          {
             document.getElementById("name").style.borderColor = "red";
             $("[data-toggle='tooltip']").tooltip('show');
-            document.contactForm.name.focus() ;
-            //return false;
-  	    ss=1;        
+	   
+            	document.contactForm.name.focus() ;
+		
+            
+  	    nm=1;        
          }
 	else
 	{
-		document.getElementById("name").style.borderColor = "";
+		document.getElementById("name").style.borderColor = "green";
             	$("[data-toggle='tooltip']").tooltip('hide');
+	
 	}
+
 	if( document.contactForm.email.value == "" )
          {
             	document.getElementById("email").style.borderColor = "red";
             	$("[data-toggle='tooltip']").tooltip('show');
- 		if(ss==0)
-   		{
+ 		if(nm==0)
+			{
 			document.contactForm.email.focus() ;
-			ss=2;
-		}
-           	//return false;
+			}
+			em=1;
+		
+           	
          }
 	else
 	{
@@ -64,11 +62,12 @@ function validateForm()
 			$("[data-toggle='tooltip']").tooltip('hide');
 			document.getElementById("email").title="Enter correct email address.";
             		$("[data-toggle='tooltip']").tooltip('show');
-			if(ss==0)
+			if(nm==0 )
 			{ 
             			document.contactForm.email.focus() ;
-				ss=2;		
+						
 			}
+			em=1;
             
          	}
 		else
@@ -79,43 +78,62 @@ function validateForm()
 				$("[data-toggle='tooltip']").tooltip('hide');
             			document.getElementById("email").title="Enter correct email address.";
 				$("[data-toggle='tooltip']").tooltip('show');
-				if(ss==0)
+				if(nm==0)
 				{ 
            				 document.contactForm.email.focus() ;
-					ss=2;
+					
 				}
-            			//return false;
+				em=1;
+            			
          		}
 			else
 			{
 
-				document.getElementById("email").style.borderColor = "";
+				document.getElementById("email").style.borderColor = "green";
             			$("[data-toggle='tooltip']").tooltip('hide');
 			}
 
 		}
 	}
+
+	 if(document.getElementById("subject").value=="null")
+   	 {
+	 document.getElementById("subject").style.borderColor = "red";
+   	 $("[data-toggle='tooltip']").tooltip('show');
+	 if(nm==0 && em==0) 
+ 	 {  
+	 document.contactForm.subject.focus();
+	 }
+   	 sb=1;
+   	 }
+	 else
+	 {
+ 	 document.getElementById("subject").style.borderColor = "green";
+	 $("[data-toggle='tooltip']").tooltip('hide');
+	 }
+
 	if( document.contactForm.message.value == "" )
          {
 
-       		document.getElementById("message").style.borderColor = "red";
-            
+       		document.getElementById("message").style.borderColor = "red";                
        		$("[data-toggle='tooltip']").tooltip('show');  
-		if(ss==0) 
+		if(nm==0 && em==0 && sb==0) 
 		{  
 
      		  document.contactForm.message.focus() ;
-		ss=3;
 		}
-            //return false;
+		msg=1;
+           
          }
 	else
 	{
-		document.getElementById("message").style.borderColor = "";
+		document.getElementById("message").style.borderColor = "green";
             	$("[data-toggle='tooltip']").tooltip('hide');
 	}
 
-if(ss==1 || ss==2 || ss==3 || ss==7 )
+
+
+if(nm==1 || em==1 || sb==1 || msg==1 )
 {
 return false;
 }
