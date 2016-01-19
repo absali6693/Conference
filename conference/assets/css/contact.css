@@ -20,13 +20,13 @@ color:white;
 }
 .my
 {
-color:black;
+color:rgb(179, 179, 179);
 }
 
 label {
 
 display: inline-block;
-color: black;
+color: #fff;
 }
 .others 
 {
