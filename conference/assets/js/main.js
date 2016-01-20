@@ -125,8 +125,7 @@ function initialize() {
         
     // Multiple Markers
     var markers = [
-        ['London Eye, London', 51.503454,-0.119562],
-        ['Palace of Westminster, London', 51.499633,-0.124755]
+        ['Ujjain Engineering College, Ujjain', 23.1461,75.7955]
     ];
                         
     // Info Window Content
@@ -167,7 +166,7 @@ function initialize() {
 
     // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-        this.setZoom(14);
+        this.setZoom(15);
         google.maps.event.removeListener(boundsListener);
     });
 }
